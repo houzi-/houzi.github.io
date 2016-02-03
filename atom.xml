@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-03T14:24:33.129Z</updated>
+  <updated>2016-02-03T16:09:41.635Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,78 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[ShadowSocks]]></title>
+    <link href="http://yoursite.com/2016/02/03/ShadowSocks/"/>
+    <id>http://yoursite.com/2016/02/03/ShadowSocks/</id>
+    <published>2016-02-03T15:14:12.000Z</published>
+    <updated>2016-02-03T16:09:41.635Z</updated>
+    <content type="html"><![CDATA[<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><p>###</p>
+<table><tr><td>Platform</td><td><center>mipsel</center></td><td><center>armv7</center></td></tr><tr><td>System</td><td>Tomato shibby v1.28.0000 MIPSR2-132)</td><td>Tomato shibby v1.28.0000 K26ARM-132</td></tr><tr><td>Support</td><td><center>all</center></td><td><center>all</center></td></tr><tr><td>Depend</td><td>entware_mipsel-install_arm.sh</td><td>ntware_arm-install_arm.sh</td></tr></table>
+
+<a id="more"></a>
+<h2 id="Open_JFFS_or_mount_U_disk"><a href="#Open_JFFS_or_mount_U_disk" class="headerlink" title="Open JFFS or mount U disk"></a>Open JFFS or mount U disk</h2><p><code>JFFS</code></p>
+<p><strong>Administration &gt;&gt; JFFS &gt;&gt; Format/Erase &gt;&gt; save</strong></p>
+<p><code>U disk</code><br><strong><font color="red">note:</font>If you do not support JFFS you can choose to mount U disk installed</strong></p>
+<p><strong>Enter <code>fdisk -l /dev/sda</code> to see U disk drive which mounts:</strong></p>
+<p>root@unknown:/#<br>Disk /dev/sda: 15.9 GB, 15931539456 bytes<br>255 heads, 63 sectors/track, 1936 cylinders<br>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
+<p>Device Boot      Start         End      Blocks  Id System<br><code>/dev/sda1</code>               1        1937    15558112+  c Win95 FAT32 (LBA)</p>
+<p><strong>I tagged by the above information indicates that the U disk drive is mounted <code>/dev/sda1</code></strong></p>
+<p><strong>Enter <code>umount -l /dev/sda1</code> unloading U disk mounted partition , so you can easily format</strong></p>
+<p><strong>Enter <code>mkfs.ext3 /dev/sda1</code> to format the partition as ext3/4 file system format</strong></p>
+<h2 id="Modify_shadowsocks_script_installation_path"><a href="#Modify_shadowsocks_script_installation_path" class="headerlink" title="Modify shadowsocks script installation path"></a>Modify shadowsocks script installation path</h2><p><strong><font color="red">note:</font> After downloading unzip into shadowsocks.zip router /tmp directory</strong></p>
+<p><strong>Looking script this command:<code>PREFIX=/jffs</code></strong></p>
+<ol>
+<li><strong>If it is mounted JFFS, you should keep the default</strong></li>
+<li><strong>If it is mounted U disk, You should change the <code>PREFIX=/mnt/sda1</code></strong></li>
+</ol>
+<h2>Installation script shadowsocks</h2>
+
+<p><strong>Download:<code>shadowsocks-libev_2.4.3-1-RC、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.5.0-1、resolvip_0.1、diffutils3.3-3</code>upload to the router /tmp directory</strong></p>
+<p><strong>Enter <code>chmod +x /tmp/shadowsocks</code> given execute permissions</strong><br><strong>Installation <code>/tmp/shadowsocks set_up</code></strong></p>
+<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_1.PNG" alt=""></p>
+<h2 id="Configuration_shadowsocks_Account"><a href="#Configuration_shadowsocks_Account" class="headerlink" title="Configuration shadowsocks Account"></a>Configuration shadowsocks Account</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_2.PNG" alt=""></p>
+<p><strong><font color="red">note:</font>Local Server Port and Sever Port Do not backwards</strong></p>
+<h2 id="Select_agent_program"><a href="#Select_agent_program" class="headerlink" title="Select agent program"></a>Select agent program</h2><table><tr><td>Option</td><td><center>mipsel+armv7</center></td></tr><tr><td><center>1</center></td><td>ss-redir+gfwlist+pdnsd</td></tr><tr><td><center>2</center></td><td>ss-redir+chnroutes+chinadns+pdnsd</td></tr><tr><td><center>3</center></td><td>ss-redir+chnroutes+pcap_dnsproxy</td></tr><tr><td><center>4</center></td><td>ss-tunnel+chnroutes+chinadns</td></tr></table>
+
+<p><strong>I’m currently using Option <code>3</code> , Option <code>3</code> is recommended</strong><br><strong><font color="red">note:</font></strong></p>
+<ol>
+<li><strong>If the configuration is successful you can use directly shadowsocks Agent</strong></li>
+<li><strong>If you use Option <code>3</code> appears unable to use shadowsocks agents may be Pcap_DNSProxy process dies , so you should enter <code>/opt/etc/init.d/S27pcap_dnsprox start</code></strong></li>
+</ol>
+<h2 id="Reboot_Router"><a href="#Reboot_Router" class="headerlink" title="Reboot Router"></a>Reboot Router</h2><h2 id="FQ"><a href="#FQ" class="headerlink" title="FQ"></a>FQ</h2><p><strong>Configuration Pcap_DNSProxyDNS resolve</strong></p>
+<p><font color="red">note:</font>Edit Pcap_DNSProxy of <code>Config.conf</code> file ( The file path : /opt/etc/pcap_dnsproxy)</p>
+<pre><code>[Local DNS]
+Local Protocol = IPv4 + UDP
+Local Hosts = 0
+Local Main = 0
+Local Routing = 0
+*/ To use the domain name within the DNS server to resolve the territory to accelerate the speed of access to CDN capabilities , please choose one of the programs , restart services after the completion of the configuration:/*
+*/ Local Main = 1 At the same time Local Routing = 1 Open the territory address routing table recognition/*
+*/ Local Hosts = 1 Open territory domain whitelist feature/*
+
+[Addresses]
+IPv4 Listen Address = 
+IPv4 EDNS Client Subnet Address =
+IPv4 DNS Address = 202.12.27.33:53 #Foreign DNS, I am here to fill local VPS &apos;s DNS, if you do not know directly 8.8.8.8:53
+IPv4 Alternate DNS Address = 8.8.4.4:53|208.67.220.220:443|208.67.222.222:5353 #Alternate DNS, keep the default
+IPv4 Local DNS Address = 114.114.114.114:53 #Domestic DNS. Try to fill your own ISP&apos;s DNS
+IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
+</code></pre><h2 id="Information_Reference"><a href="#Information_Reference" class="headerlink" title="Information Reference"></a>Information Reference</h2><p><a href="https://github.com/shadowsocks/shadowsocks-libev#usage" title="https://github.com/shadowsocks/shadowsocks-libev#usage" target="_blank" rel="external">https://github.com/shadowsocks/shadowsocks-libev#usage</a><br><a href="https://github.com/shadowsocks/openwrt-shadowsocks/blob/master/files/shadowsocks.rule" title="https://github.com/shadowsocks/openwrt-shadowsocks/blob/master/files/shadowsocks.rule" target="_blank" rel="external">https://github.com/shadowsocks/openwrt-shadowsocks/blob/master/files/shadowsocks.rule</a><br><a href="https://github.com/chengr28/Pcap_DNSProxy" title="https://github.com/chengr28/Pcap_DNSProxy" target="_blank" rel="external">https://github.com/chengr28/Pcap_DNSProxy</a></p>
+<h2 id="Usage_wiki"><a href="#Usage_wiki" class="headerlink" title="Usage wiki"></a>Usage wiki</h2><h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><p><a href="https://github.com/houzi-/tomato-shadowsocks" target="_blank" rel="external">shadowsocks script</a><br><a href="http://pan.baidu.com/s/1mgYlk28" target="_blank" rel="external">mipsel packages</a> <strong>password:<code>i3q0</code></strong><br><a href="http://pan.baidu.com/s/1dDNAdXn" target="_blank" rel="external">armv7 packages</a> <strong>password:<code>pldi</code></strong></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><p>###</p>
+<table><tr><td>Platform</td><td><center>mipsel</center></td><td><center>armv7</center></td></tr><tr><td>System</td><td>Tomato shibby v1.28.0000 MIPSR2-132)</td><td>Tomato shibby v1.28.0000 K26ARM-132</td></tr><tr><td>Support</td><td><center>all</center></td><td><center>all</center></td></tr><tr><td>Depend</td><td>entware_mipsel-install_arm.sh</td><td>ntware_arm-install_arm.sh</td></tr></table>]]>
+    
+    </summary>
+    
+      <category term="路由器" scheme="http://yoursite.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    
+      <category term="Tomato" scheme="http://yoursite.com/categories/Tomato/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>

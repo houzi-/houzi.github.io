@@ -455,6 +455,11 @@ body {
   margin: 0 auto;
   width: 700px;
 }
+@media (max-width: 767px) {
+  .main-inner {
+    width: auto;
+  }
+}
 @media (min-width: 1600px) {
   .container .main-inner {
     width: 900px;
@@ -1528,7 +1533,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a39e2e;
+  background: #ff9ca2;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -2016,6 +2021,7 @@ ul li {
 }
 @media (max-width: 767px) {
   .header-inner {
+    width: auto;
     margin-bottom: 50px;
     padding: 10px;
   }
@@ -2302,5 +2308,6 @@ ul li {
 @media (max-width: 767px) {
   .footer-inner {
     text-align: center;
+    width: auto;
   }
 }

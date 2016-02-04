@@ -12,6 +12,11 @@
   </url>
   
   <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    <lastmod>2016-02-04T07:38:39.119Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/guestbook/index.html</loc>
     <lastmod>2016-02-04T04:53:49.635Z</lastmod>
   </url>
@@ -19,11 +24,6 @@
   <url>
     <loc>http://yoursite.com/tags/index.html</loc>
     <lastmod>2016-02-03T17:31:00.800Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
-    <lastmod>2016-02-03T17:30:13.824Z</lastmod>
   </url>
   
   <url>

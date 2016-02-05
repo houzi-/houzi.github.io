@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-03T17:17:47.794Z</updated>
+  <updated>2016-02-05T05:20:48.047Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,29 +15,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[从头开始]]></title>
-    <link href="http://yoursite.com/2016/02/04/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B/"/>
-    <id>http://yoursite.com/2016/02/04/从头开始/</id>
-    <published>2016-02-03T17:16:27.000Z</published>
-    <updated>2016-02-03T17:17:47.794Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B.jpg" alt=""><br>过去的已成回忆！过去的就让他过去吧！由于之前的文章写的太杂乱，重新写吧！</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B.jpg" alt=""><br>过去的已成回忆！过去的就让他过去吧！由于之前的文章写的太杂乱，重新写吧！]]>
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="杂碎" scheme="http://yoursite.com/categories/%E6%9D%82%E7%A2%8E/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2016/02/04/hello-world/"/>
-    <id>http://yoursite.com/2016/02/04/hello-world/</id>
-    <published>2016-02-03T16:46:47.278Z</published>
-    <updated>2016-02-03T16:46:47.278Z</updated>
+    <link href="http://yoursite.com/2016/02/05/hello-world/"/>
+    <id>http://yoursite.com/2016/02/05/hello-world/</id>
+    <published>2016-02-05T05:20:48.047Z</published>
+    <updated>2016-02-05T05:20:48.047Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -59,11 +41,29 @@
   </entry>
   
   <entry>
+    <title><![CDATA[Scratch]]></title>
+    <link href="http://yoursite.com/2016/02/04/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B/"/>
+    <id>http://yoursite.com/2016/02/04/从头开始/</id>
+    <published>2016-02-03T17:16:27.000Z</published>
+    <updated>2016-02-05T05:20:44.754Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B.jpg" alt=""><br>过去的已成回忆！过去的就让他过去吧！由于之前的文章写的太杂乱，重新写吧！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B.jpg" alt=""><br>过去的已成回忆！过去的就让他过去吧！由于之前的文章写的太杂乱，重新写吧！]]>
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="杂碎" scheme="http://yoursite.com/categories/%E6%9D%82%E7%A2%8E/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Tomato-ShadowSocks(armv7+mipsel)]]></title>
     <link href="http://yoursite.com/2016/02/03/Tomato-ShadowSocks/"/>
     <id>http://yoursite.com/2016/02/03/Tomato-ShadowSocks/</id>
     <published>2016-02-03T15:14:12.000Z</published>
-    <updated>2016-02-04T16:00:39.863Z</updated>
+    <updated>2016-02-05T05:21:06.809Z</updated>
     <content type="html"><![CDATA[<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>mipsel</center></td><td><center>armv7</center></td></tr><tr><td>System</td><td>Tomato shibby v1.28.0000 MIPSR2-132)</td><td>Tomato shibby v1.28.0000 K26ARM-132</td></tr><tr><td>Support</td><td><center>all</center></td><td><center>all</center></td></tr><tr><td>Depend</td><td>entware_mipsel-install_arm.sh</td><td>ntware_arm-install_arm.sh</td></tr></table>
 
 <a id="more"></a>

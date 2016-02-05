@@ -3,7 +3,17 @@
   
   <url>
     <loc>http://yoursite.com/2016/02/03/Tomato-ShadowSocks/</loc>
-    <lastmod>2016-02-04T16:00:39.863Z</lastmod>
+    <lastmod>2016-02-05T05:21:06.809Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/02/05/hello-world/</loc>
+    <lastmod>2016-02-05T05:20:48.047Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/02/04/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B/</loc>
+    <lastmod>2016-02-05T05:20:44.754Z</lastmod>
   </url>
   
   <url>
@@ -24,16 +34,6 @@
   <url>
     <loc>http://yoursite.com/tags/index.html</loc>
     <lastmod>2016-02-03T17:31:00.800Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/02/04/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B/</loc>
-    <lastmod>2016-02-03T17:17:47.794Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/02/04/hello-world/</loc>
-    <lastmod>2016-02-03T16:46:47.278Z</lastmod>
   </url>
   
 </urlset>

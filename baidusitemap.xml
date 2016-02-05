@@ -4,7 +4,7 @@
     
   <url>
     <loc>http://yoursite.com/2016/02/03/Tomato-ShadowSocks/</loc>
-    <lastmod>2016-02-04T16:00:39.863Z</lastmod>
+    <lastmod>2016-02-05T05:21:06.809Z</lastmod>
     <data>
         <display>
         <title>Tomato-ShadowSocks(armv7+mipsel)</title>
@@ -22,16 +22,32 @@
     </url>
 
     
-    
-    
-    
+  <url>
+    <loc>http://yoursite.com/2016/02/05/hello-world/</loc>
+    <lastmod>2016-02-05T05:20:48.047Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2016-02-05T05:20:48.047Z</pubTime>
+        
+        <tag>生活 </tag>
+         
+         
+           
+             
+              <breadCrumb title="杂碎" url="http://yoursite.com/categories/%E6%9D%82%E7%A2%8E/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://yoursite.com/2016/02/04/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B/</loc>
-    <lastmod>2016-02-03T17:17:47.794Z</lastmod>
+    <lastmod>2016-02-05T05:20:44.754Z</lastmod>
     <data>
         <display>
-        <title>从头开始</title>
+        <title>Scratch</title>
         <pubTime>2016-02-03T17:16:27.000Z</pubTime>
         
         <tag>生活 </tag>
@@ -46,23 +62,7 @@
     </url>
 
     
-  <url>
-    <loc>http://yoursite.com/2016/02/04/hello-world/</loc>
-    <lastmod>2016-02-03T16:46:47.278Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2016-02-03T16:46:47.278Z</pubTime>
-        
-        <tag>生活 </tag>
-         
-         
-           
-             
-              <breadCrumb title="杂碎" url="http://yoursite.com/categories/%E6%9D%82%E7%A2%8E/"/>
-          
-        </display>
-    </data>
-    </url>
-
+    
+    
+    
 </urlset>

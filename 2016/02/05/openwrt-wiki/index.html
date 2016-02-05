@@ -1,26 +1,302 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[HOUZI的博客]]></title>
+<!doctype html>
+
+
+
   
-  <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2016-02-05T13:42:09.545Z</updated>
-  <id>http://yoursite.com/</id>
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="OpenWRT,路由器," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="HOUZI的博客" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="配置编译环境必须使用非root用户，ArchLinux需要创建新用户。
+安装依赖包// Ubuntu 14.04 必选
+# apt-get install asciidoc bash bc binutils bzip2 fastjar flex git-core g++ build-essential util-linux gawk libgtk2.0-dev intltool jikespg z">
+<meta property="og:type" content="article">
+<meta property="og:title" content="openwrt-wiki">
+<meta property="og:url" content="http://yoursite.com/2016/02/05/openwrt-wiki/index.html">
+<meta property="og:site_name" content="HOUZI的博客">
+<meta property="og:description" content="配置编译环境必须使用非root用户，ArchLinux需要创建新用户。
+安装依赖包// Ubuntu 14.04 必选
+# apt-get install asciidoc bash bc binutils bzip2 fastjar flex git-core g++ build-essential util-linux gawk libgtk2.0-dev intltool jikespg z">
+<meta property="og:updated_time" content="2016-02-05T13:42:09.545Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="openwrt-wiki">
+<meta name="twitter:description" content="配置编译环境必须使用非root用户，ArchLinux需要创建新用户。
+安装依赖包// Ubuntu 14.04 必选
+# apt-get install asciidoc bash bc binutils bzip2 fastjar flex git-core g++ build-essential util-linux gawk libgtk2.0-dev intltool jikespg z">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 9160649,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> openwrt-wiki | HOUZI的博客 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
   
-  <author>
-    <name><![CDATA[HOUZI的博客]]></name>
+
+
+
+
+
+
+
+
+  
+  
     
-  </author>
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
   
-  <entry>
-    <title><![CDATA[openwrt-wiki]]></title>
-    <link href="http://yoursite.com/2016/02/05/openwrt-wiki/"/>
-    <id>http://yoursite.com/2016/02/05/openwrt-wiki/</id>
-    <published>2016-02-05T13:20:36.000Z</published>
-    <updated>2016-02-05T13:42:09.545Z</updated>
-    <content type="html"><![CDATA[<h2 id="u914D_u7F6E_u7F16_u8BD1_u73AF_u5883"><a href="#u914D_u7F6E_u7F16_u8BD1_u73AF_u5883" class="headerlink" title="配置编译环境"></a>配置编译环境</h2><p>必须使用<strong>非root用户</strong>，ArchLinux需要创建新用户。</p>
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">HOUZI的博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                openwrt-wiki
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-05T21:20:36+08:00" content="2016-02-05">
+              2016-02-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/OpenWRT/" itemprop="url" rel="index">
+                    <span itemprop="name">OpenWRT</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/05/openwrt-wiki/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/05/openwrt-wiki/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="u914D_u7F6E_u7F16_u8BD1_u73AF_u5883"><a href="#u914D_u7F6E_u7F16_u8BD1_u73AF_u5883" class="headerlink" title="配置编译环境"></a>配置编译环境</h2><p>必须使用<strong>非root用户</strong>，ArchLinux需要创建新用户。</p>
 <h3 id="u5B89_u88C5_u4F9D_u8D56_u5305"><a href="#u5B89_u88C5_u4F9D_u8D56_u5305" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><pre><code>// Ubuntu 14.04 必选
 # apt-get install asciidoc bash bc binutils bzip2 fastjar flex git-core g++ build-essential util-linux gawk libgtk2.0-dev intltool jikespg zlib1g-dev genisoimage libncurses5-dev libssl-dev patch perl-modules python2.7-dev rsync ruby sdcc unzip wget gettext xsltproc libboost1.55-dev libboost1.55-tools-dev libxml-parser-perl libusb-dev bin86 bcc bzr ecj sharutils openjdk-7-jdk zip gcc-multilib quilt
 // Ubuntu 14.04 可选
@@ -347,193 +623,512 @@ $ make menuconfig
 </code></pre><h4 id="u51E0_u4E2A_u95EE_u9898_u89E3_u51B3_u7684_u6848_u4F8B"><a href="#u51E0_u4E2A_u95EE_u9898_u89E3_u51B3_u7684_u6848_u4F8B" class="headerlink" title="几个问题解决的案例"></a>几个问题解决的案例</h4><h5 id="u53C2_u8003_u94FE_u63A5"><a href="#u53C2_u8003_u94FE_u63A5" class="headerlink" title="参考链接"></a>参考链接</h5><blockquote>
 <p><a href="http://wiki.openwrt.org/doc/devel/add.new.device" target="_blank" rel="external">http://wiki.openwrt.org/doc/devel/add.new.device</a><br><a href="http://wiki.openwrt.org/doc/devel/hw.hacking.first.steps" target="_blank" rel="external">http://wiki.openwrt.org/doc/devel/hw.hacking.first.steps</a><br><a href="http://wiki.openwrt.org/doc/devel/patches" target="_blank" rel="external">http://wiki.openwrt.org/doc/devel/patches</a><br><a href="http://andelf.diandian.com/post/2013-05-22/40050677370" target="_blank" rel="external">http://andelf.diandian.com/post/2013-05-22/40050677370</a><br><a href="http://tilt.lib.tsinghua.edu.cn/node/841" target="_blank" rel="external">http://tilt.lib.tsinghua.edu.cn/node/841</a><br><a href="http://www.openwrt.org.cn/bbs/forum.php?mod=viewthread&amp;tid=211" target="_blank" rel="external">http://www.openwrt.org.cn/bbs/forum.php?mod=viewthread&amp;tid=211</a><br><a href="http://www.tuicool.com/kans/481707042" target="_blank" rel="external">http://www.tuicool.com/kans/481707042</a><br><a href="http://www.openwrt.org.cn/bbs/forum.php?mod=viewthread&amp;tid=60&amp;extra=page%3D1" target="_blank" rel="external">http://www.openwrt.org.cn/bbs/forum.php?mod=viewthread&amp;tid=60&amp;extra=page%3D1</a></p>
 </blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="u914D_u7F6E_u7F16_u8BD1_u73AF_u5883"><a href="#u914D_u7F6E_u7F16_u8BD1_u73AF_u5883" class="headerlink" title="配置编译环境"></a>配置编译环境</h2><p>必须使用<strong>非root用户</strong>，ArchLinux需要创建新用户。</p>
-<h3 id="u5B89_u88C5_u4F9D_u8D56_u5305"><a href="#u5B89_u88C5_u4F9D_u8D56_u5305" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><pre><code>// Ubuntu 14.04 必选
-# apt-get install asciidoc bash bc binutils bzip2 fastjar flex git-core g++ build-essential util-linux gawk libgtk2.0-dev intltool jikespg zlib1g-dev genisoimage libncurses5-dev libssl-dev patch perl-modules python2.7-dev rsync ruby sdcc unzip wget gettext xsltproc libboost1.55-dev libboost1.55-tools-dev libxml-parser-perl libusb-dev bin86 bcc bzr ecj sharutils openjdk-7-jdk zip gcc-multilib quilt
-// Ubuntu 14.04 可选
-# apt-get install subversion mercurial cvs
-// ArchLinux 必选
-# pacman -S base-devel
-# pacman -S [--needed] asciidoc b43-fwcutter bash bc bin86 boost binutils bzip2 cdrkit fastjar flex gawk gettext git gtk2 intltool jdk7-openjdk libusb libxslt ncurses openssl patch perl python2 rsync ruby sdcc sharutils unzip util-linux wget zlib gcc make perl-extutils-makemaker findutils libstdc++5 lib32-libstdc++5
-// libstdc++  可能需要版本6,待测
-// 根据wiki，ArchLinux部分必选包在AUR里面
-// 从 2015-12-11 开始，bcc和jikes貌似从AUR里消失了，可能是 C++ ABI 更新的缘故，不安装这两个貌似也可以
-$ yaourt -S bcc jikes
-// ArchLinux 可选
-# pacman -S subversion
-</code></pre>]]>
-    
-    </summary>
-    
-      <category term="OpenWRT" scheme="http://yoursite.com/tags/OpenWRT/"/>
-    
-      <category term="路由器" scheme="http://yoursite.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
-    
-      <category term="OpenWRT" scheme="http://yoursite.com/categories/OpenWRT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Ubuntu开发环境搭建]]></title>
-    <link href="http://yoursite.com/2016/02/05/ubuntu-development-environment/"/>
-    <id>http://yoursite.com/2016/02/05/ubuntu-development-environment/</id>
-    <published>2016-02-05T08:55:24.000Z</published>
-    <updated>2016-02-05T09:05:24.730Z</updated>
-    <content type="html"><![CDATA[<h2 id="u4E00-__u5B89_u88C5C_uFF0FC_uFF0B_uFF0B_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883"><a href="#u4E00-__u5B89_u88C5C_uFF0FC_uFF0B_uFF0B_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883" class="headerlink" title="一. 安装C／C＋＋程序的开发环境"></a>一. 安装C／C＋＋程序的开发环境</h2><pre><code>sudo apt-get install build-essential //安装主要编译工具 包括gcc, g++, make 
-sudo apt-get install autoconf automake //安装时apt-get 推荐用 automake 代替 automake1.9
-sudo apt-get install flex bison //flex 经常和自由软件 Bison 语法分析器生成器一起使用
-sudo apt-get install manpages-dev //安装C语言函数man文档 
-sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装相关文档
-</code></pre><a id="more"></a>
-<h2 id="u4E8C-__u5B89_u88C5Gnome_u684C_u9762_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883"><a href="#u4E8C-__u5B89_u88C5Gnome_u684C_u9762_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883" class="headerlink" title="二. 安装Gnome桌面程序的开发环境"></a>二. 安装Gnome桌面程序的开发环境</h2><pre><code>sudo apt-get install gnome-core-devel //安装核心文件 
-sudo apt-get install pkg-config 
-sudo apt-get install devhelp //安装GTK文档查看程序 
-sudo apt-get install libglib2.0-doc libgtk2.0-doc //安装 API参考手册及其它帮助文档 
-sudo apt-get instal glade libglade2-dev //安装GTK界面构造程序 
-</code></pre><h2 id="u4E09-__u5B89_u88C5JAVA_u5F00_u53D1_u73AF_u5883"><a href="#u4E09-__u5B89_u88C5JAVA_u5F00_u53D1_u73AF_u5883" class="headerlink" title="三. 安装JAVA开发环境"></a>三. 安装JAVA开发环境</h2><pre><code>sudo apt-get install sun-java6-jdk sun-java6-doc sun-java6-source //安装核心开发用具，相关文档 
-sudo update-alternatives --config java //通常给出两个或多个JRE选择路径 选择：/usr/lib/jvm/java-1.5.0-sun/jre/bin/java作为你的JAVA运行环境 
-sudo vim /etc/environment //配置环境变量，添加如下两行： 
-CLASSPATH=/usr/lib/jvm/java-6-sun/lib 
-JAVA_HOME=/usr/lib/jvm/java-6-sun 
-sudo apt-get install eclipse //安装eclipse 
-sudo update-java-alternatives -s java-6-sun //SUN版本的JAVA 设置为系统默认 JDK 
-sudo vim /etc/jvm //编辑 JVM 配置文件， 将文件中的/usr/lib/jvm/java-6-sun放到配 置文件的顶部 
-sudo vim /etc/eclipse/java_home //操作如上
-</code></pre>]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="u4E00-__u5B89_u88C5C_uFF0FC_uFF0B_uFF0B_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883"><a href="#u4E00-__u5B89_u88C5C_uFF0FC_uFF0B_uFF0B_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883" class="headerlink" title="一. 安装C／C＋＋程序的开发环境"></a>一. 安装C／C＋＋程序的开发环境</h2><pre><code>sudo apt-get install build-essential //安装主要编译工具 包括gcc, g++, make 
-sudo apt-get install autoconf automake //安装时apt-get 推荐用 automake 代替 automake1.9
-sudo apt-get install flex bison //flex 经常和自由软件 Bison 语法分析器生成器一起使用
-sudo apt-get install manpages-dev //安装C语言函数man文档 
-sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装相关文档
-</code></pre>]]>
-    
-    </summary>
-    
-      <category term="developmen" scheme="http://yoursite.com/tags/developmen/"/>
-    
-      <category term="编程开发" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Scratch]]></title>
-    <link href="http://yoursite.com/2016/02/04/Scratch/"/>
-    <id>http://yoursite.com/2016/02/04/Scratch/</id>
-    <published>2016-02-03T17:16:27.000Z</published>
-    <updated>2016-02-05T05:20:44.754Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B.jpg" alt=""><br>过去的已成回忆！过去的就让他过去吧！由于之前的文章写的太杂乱，重新写吧！</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B.jpg" alt=""><br>过去的已成回忆！过去的就让他过去吧！由于之前的文章写的太杂乱，重新写吧！]]>
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="杂碎" scheme="http://yoursite.com/categories/%E6%9D%82%E7%A2%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Tomato-ShadowSocks(armv7+mipsel)]]></title>
-    <link href="http://yoursite.com/2016/02/03/Tomato-ShadowSocks/"/>
-    <id>http://yoursite.com/2016/02/03/Tomato-ShadowSocks/</id>
-    <published>2016-02-03T15:14:12.000Z</published>
-    <updated>2016-02-05T13:46:33.339Z</updated>
-    <content type="html"><![CDATA[<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>mipsel</center></td><td><center>armv7</center></td></tr><tr><td>System</td><td>Tomato shibby v1.28.0000 MIPSR2-132)</td><td>Tomato shibby v1.28.0000 K26ARM-132</td></tr><tr><td>Support</td><td><center>all</center></td><td><center>all</center></td></tr><tr><td>Depend</td><td>entware_mipsel-install_arm.sh</td><td>ntware_arm-install_arm.sh</td></tr></table>
 
-<a id="more"></a>
-<h2 id="Open_JFFS_or_mount_U_disk"><a href="#Open_JFFS_or_mount_U_disk" class="headerlink" title="Open JFFS or mount U disk"></a>Open JFFS or mount U disk</h2><p><code>JFFS</code></p>
-<p><strong>Administration &gt;&gt; JFFS &gt;&gt; Format/Erase &gt;&gt; save</strong></p>
-<p><code>U disk</code><br><strong><font color="red">note:</font>If you do not support JFFS you can choose to mount U disk installed</strong></p>
-<p><strong>Enter <code>fdisk -l /dev/sda</code> to see U disk drive which mounts:</strong></p>
-<p>root@unknown:/#<br>Disk /dev/sda: 15.9 GB, 15931539456 bytes<br>255 heads, 63 sectors/track, 1936 cylinders<br>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
-<p>Device Boot      Start         End      Blocks  Id System<br><code>/dev/sda1</code>               1        1937    15558112+  c Win95 FAT32 (LBA)</p>
-<p><strong>I tagged by the above information indicates that the U disk drive is mounted <code>/dev/sda1</code></strong></p>
-<p><strong>Enter <code>umount -l /dev/sda1</code> unloading U disk mounted partition , so you can easily format</strong></p>
-<p><strong>Enter <code>mkfs.ext3 /dev/sda1</code> to format the partition as ext3/4 file system format</strong></p>
-<h2 id="Modify_shadowsocks_script_installation_path"><a href="#Modify_shadowsocks_script_installation_path" class="headerlink" title="Modify shadowsocks script installation path"></a>Modify shadowsocks script installation path</h2><p><strong><font color="red">note:</font> After downloading unzip into shadowsocks.zip router /tmp directory</strong></p>
-<p><strong>Looking script this command:<code>PREFIX=/jffs</code></strong></p>
-<ol>
-<li><strong>If it is mounted JFFS, you should keep the default</strong></li>
-<li><strong>If it is mounted U disk, You should change the <code>PREFIX=/mnt/sda1</code></strong></li>
-</ol>
-<h2 id="Installation_script_shadowsocks"><a href="#Installation_script_shadowsocks" class="headerlink" title="Installation script shadowsocks"></a>Installation script shadowsocks</h2><p><strong>Download:<code>shadowsocks-libev_2.4.3-1-RC、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.5.0-1、resolvip_0.1、diffutils3.3-3</code>upload to the router /tmp directory</strong></p>
-<p><strong>Enter <code>chmod +x /tmp/shadowsocks</code> given execute permissions</strong><br><strong>Installation <code>/tmp/shadowsocks set_up</code></strong></p>
-<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_1.PNG" alt=""></p>
-<h2 id="Configuration_shadowsocks_Account"><a href="#Configuration_shadowsocks_Account" class="headerlink" title="Configuration shadowsocks Account"></a>Configuration shadowsocks Account</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_2.PNG" alt=""></p>
-<p><strong><font color="red">note:</font>Local Server Port and Sever Port Do not backwards</strong></p>
-<h2 id="Select_agent_program"><a href="#Select_agent_program" class="headerlink" title="Select agent program"></a>Select agent program</h2><table><tr><td>Option</td><td><center>mipsel+armv7</center></td></tr><tr><td><center>1</center></td><td>ss-redir+gfwlist+pdnsd</td></tr><tr><td><center>2</center></td><td>ss-redir+chnroutes+chinadns+pdnsd</td></tr><tr><td><center>3</center></td><td>ss-redir+chnroutes+pcap_dnsproxy</td></tr><tr><td><center>4</center></td><td>ss-tunnel+chnroutes+chinadns</td></tr></table>
+      
+    </div>
 
-<p><strong>I’m currently using Option <code>3</code> , Option <code>3</code> is recommended</strong><br><strong><font color="red">note:</font></strong></p>
-<ol>
-<li><strong>If the configuration is successful you can use directly shadowsocks Agent</strong></li>
-<li><strong>If you use Option <code>3</code> appears unable to use shadowsocks agents may be Pcap_DNSProxy process dies , so you should enter <code>/opt/etc/init.d/S27pcap_dnsprox start</code></strong></li>
-</ol>
-<h2 id="Reboot_Router"><a href="#Reboot_Router" class="headerlink" title="Reboot Router"></a>Reboot Router</h2><h2 id="FQ"><a href="#FQ" class="headerlink" title="FQ"></a>FQ</h2><p><strong>Configuration Pcap_DNSProxyDNS resolve</strong></p>
-<p><font color="red">note:</font>Edit Pcap_DNSProxy of <code>Config.conf</code> file ( The file path : /opt/etc/pcap_dnsproxy)</p>
-<pre><code>[Local DNS]
-Local Protocol = IPv4 + UDP
-Local Hosts = 0
-Local Main = 0
-Local Routing = 0
-*/ To use the domain name within the DNS server to resolve the territory to accelerate the speed of access to CDN capabilities , please choose one of the programs , restart services after the completion of the configuration:/*
-*/ Local Main = 1 At the same time Local Routing = 1 Open the territory address routing table recognition/*
-*/ Local Hosts = 1 Open territory domain whitelist feature/*
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/OpenWRT/" rel="tag">#OpenWRT</a>
+          
+            <a href="/tags/路由器/" rel="tag">#路由器</a>
+          
+        </div>
+      
 
-[Addresses]
-IPv4 Listen Address = 
-IPv4 EDNS Client Subnet Address =
-IPv4 DNS Address = 202.12.27.33:53 #Foreign DNS, I am here to fill local VPS &apos;s DNS, if you do not know directly 8.8.8.8:53
-IPv4 Alternate DNS Address = 8.8.4.4:53|208.67.220.220:443|208.67.222.222:5353 #Alternate DNS, keep the default
-IPv4 Local DNS Address = 114.114.114.114:53 #Domestic DNS. Try to fill your own ISP&apos;s DNS
-IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
-</code></pre><h2 id="Usage_wiki"><a href="#Usage_wiki" class="headerlink" title="Usage wiki"></a>Usage wiki</h2><h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><p><a href="https://github.com/houzi-/tomato-shadowsocks" target="_blank" rel="external">shadowsocks script</a><br><a href="http://pan.baidu.com/s/1mgYlk28" target="_blank" rel="external">mipsel packages</a> <strong>password:<code>i3q0</code></strong><br><a href="http://pan.baidu.com/s/1dDNAdXn" target="_blank" rel="external">armv7 packages</a> <strong>password:<code>pldi</code></strong></p>
-<h2 id="Information_Reference"><a href="#Information_Reference" class="headerlink" title="Information Reference"></a>Information Reference</h2><blockquote>
-<p><a href="https://github.com/shadowsocks/shadowsocks-libev#usage" title="https://github.com/shadowsocks/shadowsocks-libev#usage" target="_blank" rel="external">https://github.com/shadowsocks/shadowsocks-libev#usage</a><br><a href="https://github.com/shadowsocks/openwrt-shadowsocks/blob/master/files/shadowsocks.rule" title="https://github.com/shadowsocks/openwrt-shadowsocks/blob/master/files/shadowsocks.rule" target="_blank" rel="external">https://github.com/shadowsocks/openwrt-shadowsocks/blob/master/files/shadowsocks.rule</a><br><a href="https://github.com/chengr28/Pcap_DNSProxy" title="https://github.com/chengr28/Pcap_DNSProxy" target="_blank" rel="external">https://github.com/chengr28/Pcap_DNSProxy</a></p>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>mipsel</center></td><td><center>armv7</center></td></tr><tr><td>System</td><td>Tomato shibby v1.28.0000 MIPSR2-132)</td><td>Tomato shibby v1.28.0000 K26ARM-132</td></tr><tr><td>Support</td><td><center>all</center></td><td><center>all</center></td></tr><tr><td>Depend</td><td>entware_mipsel-install_arm.sh</td><td>ntware_arm-install_arm.sh</td></tr></table>]]>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/02/05/ubuntu-development-environment/" rel="next" title="Ubuntu开发环境搭建">
+                <i class="fa fa-chevron-left"></i> Ubuntu开发环境搭建
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
-    </summary>
+      <div class="ds-thread" data-thread-key="2016/02/05/openwrt-wiki/"
+           data-title="openwrt-wiki" data-url="http://yoursite.com/2016/02/05/openwrt-wiki/">
+      </div>
     
-      <category term="Tomato" scheme="http://yoursite.com/tags/Tomato/"/>
-    
-      <category term="路由器" scheme="http://yoursite.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
-    
-      <category term="Tomato" scheme="http://yoursite.com/categories/Tomato/"/>
-    
-  </entry>
+  </div>
+
+
+        </div>
+        
+          
   
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2016/02/02/hello-world/"/>
-    <id>http://yoursite.com/2016/02/02/hello-world/</id>
-    <published>2016-02-02T15:14:12.000Z</published>
-    <updated>2016-02-05T05:32:09.724Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<a id="more"></a>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>]]>
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="杂碎" scheme="http://yoursite.com/categories/%E6%9D%82%E7%A2%8E/"/>
-    
-  </entry>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://avatars0.githubusercontent.com/u/9395995?v=3&u=ae6055360dc7047d77121aeccdeb3a5dd4a44cf0&s=140"
+               alt="HOUZI的博客" />
+          <p class="site-author-name" itemprop="name">HOUZI的博客</p>
+          <p class="site-description motion-element" itemprop="description">看见的，看不见了；记住了，遗忘了·····</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+          
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/houzi-" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/?lang=zh-cn" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/1864128991/home?wvr=5&lf=reg" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://macshuo.com/" target="_blank">MacTalk</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u914D_u7F6E_u7F16_u8BD1_u73AF_u5883"><span class="nav-number">1.</span> <span class="nav-text">配置编译环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B89_u88C5_u4F9D_u8D56_u5305"><span class="nav-number">1.1.</span> <span class="nav-text">安装依赖包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u9996_u6B21_u914D_u7F6E_u9700_u8981_u68C0_u51FA_u6E90_u4EE3_u7801_uFF0C_u8FD9_u91CC_u7528subversion_u68C0_u51FA_u5F00_u53D1trunk_u5206_u652F"><span class="nav-number">1.2.</span> <span class="nav-text">首次配置需要检出源代码，这里用subversion检出开发trunk分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u66F4_u65B0_u548C_u5B89_u88C5feeds_uFF08_u9700_u8981VPN_uFF09"><span class="nav-number">1.3.</span> <span class="nav-text">更新和安装feeds（需要VPN）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u914D_u7F6E_u7F16_u8BD1_u4FE1_u606F"><span class="nav-number">1.4.</span> <span class="nav-text">配置编译信息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5F00_u59CB_u7F16_u8BD1"><span class="nav-number">2.</span> <span class="nav-text">开始编译</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u7F16_u8BD1_u7ED3_u675F"><span class="nav-number">2.1.</span> <span class="nav-text">编译结束</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6E05_u7406_u4EE5_u53CA_u518D_u7F16_u8BD1"><span class="nav-number">3.</span> <span class="nav-text">清理以及再编译</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u548C_u5B98_u65B9_u4ED3_u5E93_u4FDD_u6301_u540C_u6B65"><span class="nav-number">4.</span> <span class="nav-text">和官方仓库保持同步</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OpenWRT__u7F16_u8BD1_doc__u6587_u4EF6"><span class="nav-number">5.</span> <span class="nav-text">OpenWRT 编译 doc 文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u589E_u52A0_u8BBE_u5907_u652F_u6301"><span class="nav-number">6.</span> <span class="nav-text">增加设备支持</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#u524D_u63D0"><span class="nav-number">6.0.0.1.</span> <span class="nav-text">前提</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#u6240_u9700"><span class="nav-number">6.0.0.2.</span> <span class="nav-text">所需</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#u589E_u52A0_Device-Specific__u652F_u6301_u6587_u4EF6"><span class="nav-number">6.0.0.3.</span> <span class="nav-text">增加 Device-Specific 支持文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#diag-sh"><span class="nav-number">6.0.0.4.</span> <span class="nav-text">diag.sh</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#uci-defaults/01_leds"><span class="nav-number">6.0.0.5.</span> <span class="nav-text">uci-defaults/01_leds</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#uci-defaults/02_network"><span class="nav-number">6.0.0.6.</span> <span class="nav-text">uci-defaults/02_network</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#uci-defaults_u7684_u8BF4_u660E"><span class="nav-number">6.0.0.7.</span> <span class="nav-text">uci-defaults的说明</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#lib/upgrade/platform-sh"><span class="nav-number">6.0.0.8.</span> <span class="nav-text">lib/upgrade/platform.sh</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#lib/ar71xx-sh"><span class="nav-number">6.0.0.9.</span> <span class="nav-text">lib/ar71xx.sh</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#files/arch/mips/ath79/mach-tl-wdr3500-c"><span class="nav-number">6.0.0.10.</span> <span class="nav-text">files/arch/mips/ath79/mach-tl-wdr3500.c</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u955C_u50CF_u751F_u6210_u7684_u76F8_u5173_u6587_u4EF6"><span class="nav-number">6.0.1.</span> <span class="nav-text">镜像生成的相关文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#trunk/target/linux/ar71xx/image/Makefile"><span class="nav-number">6.0.1.1.</span> <span class="nav-text">trunk/target/linux/ar71xx/image/Makefile</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#trunk/target/linux/ar71xx/generic/profiles/tp-link-mk"><span class="nav-number">6.0.1.2.</span> <span class="nav-text">trunk/target/linux/ar71xx/generic/profiles/tp-link.mk</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#trunk/tools/firmware-utils/src/mktplinkfw-c"><span class="nav-number">6.0.1.3.</span> <span class="nav-text">trunk/tools/firmware-utils/src/mktplinkfw.c</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#config-3-10"><span class="nav-number">6.0.1.4.</span> <span class="nav-text">config-3.10</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#patches-3-10/610-MIPS-ath79-openwrt-machines-patch"><span class="nav-number">6.0.1.5.</span> <span class="nav-text">patches-3.10/610-MIPS-ath79-openwrt-machines.patch</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u7BA1_u7406_u8865_u4E01_u6587_u4EF6"><span class="nav-number">6.0.2.</span> <span class="nav-text">管理补丁文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u51E0_u79CD_u7BA1_u7406_u64CD_u4F5C"><span class="nav-number">6.0.3.</span> <span class="nav-text">几种管理操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#u589E_u52A0_u4E00_u4E2A_u65B0_u7684Patch"><span class="nav-number">6.0.3.1.</span> <span class="nav-text">增加一个新的Patch</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#u7F16_u8F91_u4E00_u4E2A_u73B0_u6709_u7684patch"><span class="nav-number">6.0.3.2.</span> <span class="nav-text">编辑一个现有的patch</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#u65B0_u589E_u6216_u4FEE_u6539_u5185_u6838_u8865_u4E01"><span class="nav-number">6.0.3.3.</span> <span class="nav-text">新增或修改内核补丁</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#u589E_u52A0_u6216_u7F16_u8F91_u5DE5_u5177_u94FE_Patch_uFF08_u8FD9_u90E8_u5206_u4E00_u822C_u4E0D_u4F1A_u6D89_u53CA_uFF09"><span class="nav-number">6.0.3.4.</span> <span class="nav-text">增加或编辑工具链 Patch（这部分一般不会涉及）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#u5237_u65B0Patch"><span class="nav-number">6.0.3.5.</span> <span class="nav-text">刷新Patch</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#u4E0D_u6E05_u7406_u4EE3_u7801_u6811_u91CD_u590D_u4FEE_u6539_u8865_u4E01"><span class="nav-number">6.0.3.6.</span> <span class="nav-text">不清理代码树重复修改补丁</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#u51C6_u5907_linux__u5185_u6838_patch_uFF08_u65E7_uFF09"><span class="nav-number">6.0.3.7.</span> <span class="nav-text">准备 linux 内核 patch（旧）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#u51C6_u5907_linux__u5185_u6838_u677F_u7EA7_u652F_u6301_uFF08_u65B0_uFF09"><span class="nav-number">6.0.3.8.</span> <span class="nav-text">准备 linux 内核板级支持（新）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#u5F00_u59CB_u7F16_u8BD1-1"><span class="nav-number">6.0.3.9.</span> <span class="nav-text">开始编译</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u51E0_u4E2A_u95EE_u9898_u89E3_u51B3_u7684_u6848_u4F8B"><span class="nav-number">6.0.4.</span> <span class="nav-text">几个问题解决的案例</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#u53C2_u8003_u94FE_u63A5"><span class="nav-number">6.0.4.1.</span> <span class="nav-text">参考链接</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
   
-</feed>
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">HOUZI的博客</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"router008"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementById('footer')
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+    
+
+
+
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
+  
+
+
+  
+  
+
+
+</body>
+</html>

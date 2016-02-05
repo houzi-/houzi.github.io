@@ -245,6 +245,249 @@
             
               
                 
+                <a class="post-title-link" href="/2016/02/05/openwrt-wiki/" itemprop="url">
+                  openwrt-wiki
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-05T21:20:36+08:00" content="2016-02-05">
+              2016-02-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/OpenWRT/" itemprop="url" rel="index">
+                    <span itemprop="name">OpenWRT</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/05/openwrt-wiki/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/05/openwrt-wiki/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="u914D_u7F6E_u7F16_u8BD1_u73AF_u5883"><a href="#u914D_u7F6E_u7F16_u8BD1_u73AF_u5883" class="headerlink" title="配置编译环境"></a>配置编译环境</h2><p>必须使用<strong>非root用户</strong>，ArchLinux需要创建新用户。</p>
+<h3 id="u5B89_u88C5_u4F9D_u8D56_u5305"><a href="#u5B89_u88C5_u4F9D_u8D56_u5305" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><pre><code>// Ubuntu 14.04 必选
+# apt-get install asciidoc bash bc binutils bzip2 fastjar flex git-core g++ build-essential util-linux gawk libgtk2.0-dev intltool jikespg zlib1g-dev genisoimage libncurses5-dev libssl-dev patch perl-modules python2.7-dev rsync ruby sdcc unzip wget gettext xsltproc libboost1.55-dev libboost1.55-tools-dev libxml-parser-perl libusb-dev bin86 bcc bzr ecj sharutils openjdk-7-jdk zip gcc-multilib quilt
+// Ubuntu 14.04 可选
+# apt-get install subversion mercurial cvs
+// ArchLinux 必选
+# pacman -S base-devel
+# pacman -S [--needed] asciidoc b43-fwcutter bash bc bin86 boost binutils bzip2 cdrkit fastjar flex gawk gettext git gtk2 intltool jdk7-openjdk libusb libxslt ncurses openssl patch perl python2 rsync ruby sdcc sharutils unzip util-linux wget zlib gcc make perl-extutils-makemaker findutils libstdc++5 lib32-libstdc++5
+// libstdc++  可能需要版本6,待测
+// 根据wiki，ArchLinux部分必选包在AUR里面
+// 从 2015-12-11 开始，bcc和jikes貌似从AUR里消失了，可能是 C++ ABI 更新的缘故，不安装这两个貌似也可以
+$ yaourt -S bcc jikes
+// ArchLinux 可选
+# pacman -S subversion
+</code></pre>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/02/05/openwrt-wiki/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/02/05/ubuntu-development-environment/" itemprop="url">
+                  Ubuntu开发环境搭建
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-05T16:55:24+08:00" content="2016-02-05">
+              2016-02-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/编程开发/" itemprop="url" rel="index">
+                    <span itemprop="name">编程开发</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/05/ubuntu-development-environment/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/05/ubuntu-development-environment/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="u4E00-__u5B89_u88C5C_uFF0FC_uFF0B_uFF0B_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883"><a href="#u4E00-__u5B89_u88C5C_uFF0FC_uFF0B_uFF0B_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883" class="headerlink" title="一. 安装C／C＋＋程序的开发环境"></a>一. 安装C／C＋＋程序的开发环境</h2><pre><code>sudo apt-get install build-essential //安装主要编译工具 包括gcc, g++, make 
+sudo apt-get install autoconf automake //安装时apt-get 推荐用 automake 代替 automake1.9
+sudo apt-get install flex bison //flex 经常和自由软件 Bison 语法分析器生成器一起使用
+sudo apt-get install manpages-dev //安装C语言函数man文档 
+sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装相关文档
+</code></pre>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/02/05/ubuntu-development-environment/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/02/04/Scratch/" itemprop="url">
                   Scratch
                 </a>
@@ -600,7 +843,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -608,7 +851,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -617,7 +860,7 @@
           
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
@@ -769,6 +1012,7 @@
 
 
   
+    
 
   
     
@@ -795,6 +1039,8 @@
   
 
 
+
+    
 
 
 

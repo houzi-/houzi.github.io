@@ -245,8 +245,127 @@
             
               
                 
-                <a class="post-title-link" href="/2016/02/05/openwrt-wiki/" itemprop="url">
-                  openwrt-wiki
+                <a class="post-title-link" href="/2016/02/14/Tomato-shadowsocks-Scripting-Guide/" itemprop="url">
+                  Tomato-shadowsocks Scripting Guide
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-14T08:45:46+08:00" content="2016-02-14">
+              2016-02-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Tomato/" itemprop="url" rel="index">
+                    <span itemprop="name">Tomato</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/14/Tomato-shadowsocks-Scripting-Guide/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/14/Tomato-shadowsocks-Scripting-Guide/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/02/14/Tomato-shadowsocks-Scripting-Guide/" class="leancloud_visitors" data-flag-title="Tomato-shadowsocks Scripting Guide">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="u90E8_u7F72_u6559_u7A0B"><a href="#u90E8_u7F72_u6559_u7A0B" class="headerlink" title="部署教程"></a>部署教程</h2><p><a href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/" title="Tomato-ShadowSocks(armv7+mipsel)" target="_blank" rel="external">http://www.router008.com/2016/02/03/Tomato-ShadowSocks/</a></p>
+<h2 id="u811A_u672C_u53C2_u6570_u4ECB_u7ECD"><a href="#u811A_u672C_u53C2_u6570_u4ECB_u7ECD" class="headerlink" title="脚本参数介绍"></a>脚本参数介绍</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line">set_up)</span><br><span class="line">    ShadowSocks自动安装部署</span><br><span class="line">    关联`run` `ipset` `rules`</span><br><span class="line"></span><br><span class="line">run)</span><br><span class="line">    关联`set_up`起到安装部署过程中启动程序和更新IP列表的作用也可以独立运行，例如跟着路由器一起开机启动</span><br><span class="line">    关联`update_chnroutes` `update_gfwlist` `flush` `rules`</span><br><span class="line"></span><br><span class="line">ipset)</span><br><span class="line">    加载使用IPSET所需要的模块</span><br><span class="line">    也可以独立运行，例如跟着路由器一起开机启动</span><br><span class="line"></span><br><span class="line">rules)</span><br><span class="line">    加载各个方案所需要的iptables rules</span><br><span class="line">    也可以独立运行，例如跟着路由器一起开机启动</span><br><span class="line"></span><br><span class="line">global)</span><br><span class="line">    开启[2][3][4]方案的全局代理模式</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行</span><br><span class="line"></span><br><span class="line">flush)</span><br><span class="line">    清空防iptanles之前加载的rules，恢复iptables默认</span><br><span class="line">    可以独立运行</span><br><span class="line"></span><br><span class="line">update_chnroutes)</span><br><span class="line">    [2][3][4]方案更新中国IP列表</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行	</span><br><span class="line"></span><br><span class="line">update_gfwlist)</span><br><span class="line">    [1]方案更新GFWLIST</span><br><span class="line">    可以独立运行	</span><br><span class="line"></span><br><span class="line">check)</span><br><span class="line">    守护各个方案的进程</span><br><span class="line">    可以独立运行	</span><br><span class="line"></span><br><span class="line">ss_switch)</span><br><span class="line">    shadowsocks账号切换</span><br><span class="line">    多种模式账号切换:</span><br><span class="line">    [修改json文件] 主要用于各个不同[密码][加密方式][端口]</span><br><span class="line">    [修改IP] 主要用于相同[密码][加密方式][端口]</span><br><span class="line">    关联`run`</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">mult_switch)</span><br><span class="line">    `ss_switch`的强化版本</span><br><span class="line">    带有6个shadowsocks账号的储存和写入功能</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行	 </span><br><span class="line">	</span><br><span class="line">lan_ignore)</span><br><span class="line">    [2][3][4]方案的本地局域网设备使用代理控制</span><br><span class="line">    多种写入IP方式:</span><br><span class="line">    [连接路由器的全部IP]</span><br><span class="line">    [自定义手动输入]</span><br><span class="line">    多种控制模式:</span><br><span class="line">    [仅允许列表内]</span><br><span class="line">    [除了列表内]</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">off_on)</span><br><span class="line">    关闭和开启代理</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">update_rebuild)</span><br><span class="line">    更新脚本和重新设置脚本</span><br><span class="line">	多种模式:</span><br><span class="line">    [仅更新脚本] 主要用于脚本小幅度更新,如果脚本有大幅度功能的变化,此模式并不适用</span><br><span class="line">    [重新设置脚本] 主要用于脚本大幅度更新和小幅度更新</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行</span><br><span class="line">     	 </span><br><span class="line">*mail)</span><br><span class="line">    邮件提醒</span><br><span class="line">    可以独立运行</span><br><span class="line"></span><br><span class="line">*temp) */XIAOMI R1D/*</span><br><span class="line">    风扇控制</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">*temp_s) */XIAOMI R1D/*</span><br><span class="line">    风扇开启夜间静音模式</span><br><span class="line">    可以独立运行</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/02/05/OpenWRT-Guide/" itemprop="url">
+                  OpenWRT Guide
                 </a>
               
             
@@ -289,8 +408,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/02/05/openwrt-wiki/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/05/openwrt-wiki/" itemprop="commentsCount"></span>
+                <a href="/2016/02/05/OpenWRT-Guide/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/05/OpenWRT-Guide/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -300,7 +419,7 @@
 
           
           
-             <span id="/2016/02/05/openwrt-wiki/" class="leancloud_visitors" data-flag-title="openwrt-wiki">
+             <span id="/2016/02/05/OpenWRT-Guide/" class="leancloud_visitors" data-flag-title="OpenWRT Guide">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -337,7 +456,7 @@ $ yaourt -S bcc jikes
 # pacman -S subversion
 </code></pre>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/02/05/openwrt-wiki/#more" rel="contents">
+            <a class="btn" href="/2016/02/05/OpenWRT-Guide/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -725,131 +844,14 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/02/02/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-02T23:14:12+08:00" content="2016-02-02">
-              2016-02-02
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/杂碎/" itemprop="url" rel="index">
-                    <span itemprop="name">杂碎</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/02/02/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/02/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/02/02/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/02/02/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -888,7 +890,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

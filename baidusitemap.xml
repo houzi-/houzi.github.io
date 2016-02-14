@@ -2,6 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+  <url>
+    <loc>http://yoursite.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</loc>
+    <lastmod>2016-02-14T12:50:50.053Z</lastmod>
+    <data>
+        <display>
+        <title>Tomato-shadowsocks Scripting Guide</title>
+        <pubTime>2016-02-14T00:45:46.000Z</pubTime>
+        
+        <tag>Tomato </tag>
+         
+        <tag>路由器 </tag>
+         
+         
+           
+             
+              <breadCrumb title="Tomato" url="http://yoursite.com/categories/Tomato/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/02/05/OpenWRT-Guide/</loc>
+    <lastmod>2016-02-14T00:52:02.195Z</lastmod>
+    <data>
+        <display>
+        <title>OpenWRT Guide</title>
+        <pubTime>2016-02-05T13:20:36.000Z</pubTime>
+        
+        <tag>OpenWRT </tag>
+         
+        <tag>路由器 </tag>
+         
+         
+           
+             
+              <breadCrumb title="OpenWRT" url="http://yoursite.com/categories/OpenWRT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://yoursite.com/2016/02/03/Tomato-ShadowSocks/</loc>
@@ -19,28 +63,6 @@
            
              
               <breadCrumb title="Tomato" url="http://yoursite.com/categories/Tomato/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/02/05/openwrt-wiki/</loc>
-    <lastmod>2016-02-05T13:42:09.545Z</lastmod>
-    <data>
-        <display>
-        <title>openwrt-wiki</title>
-        <pubTime>2016-02-05T13:20:36.000Z</pubTime>
-        
-        <tag>OpenWRT </tag>
-         
-        <tag>路由器 </tag>
-         
-         
-           
-             
-              <breadCrumb title="OpenWRT" url="http://yoursite.com/categories/OpenWRT/"/>
           
         </display>
     </data>

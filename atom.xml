@@ -468,7 +468,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
     <link href="http://yoursite.com/2016/02/03/Tomato-ShadowSocks/"/>
     <id>http://yoursite.com/2016/02/03/Tomato-ShadowSocks/</id>
     <published>2016-02-03T15:14:12.000Z</published>
-    <updated>2016-02-14T12:53:52.748Z</updated>
+    <updated>2016-02-16T16:01:35.525Z</updated>
     <content type="html"><![CDATA[<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>mipsel</center></td><td><center>armv7</center></td></tr><tr><td>System</td><td>Tomato shibby v1.28.0000 MIPSR2-132)</td><td>Tomato shibby v1.28.0000 K26ARM-132</td></tr><tr><td>Support</td><td><center>all</center></td><td><center>all</center></td></tr><tr><td>Depend</td><td>entware_mipsel-install_arm.sh</td><td>ntware_arm-install_arm.sh</td></tr></table>
 
 <a id="more"></a>
@@ -501,6 +501,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
 </ol>
 <h2 id="Reboot_Router"><a href="#Reboot_Router" class="headerlink" title="Reboot Router"></a>Reboot Router</h2><h2 id="FQ"><a href="#FQ" class="headerlink" title="FQ"></a>FQ</h2><p><strong>Configuration Pcap_DNSProxyDNS resolve</strong></p>
 <p><font color="red">note:</font>Edit Pcap_DNSProxy of <code>Config.conf</code> file ( The file path : /opt/etc/pcap_dnsproxy)</p>
+<p><font color="red">note:</font>If the <code>MIPS</code> architecture router does not recommend the following configuration , it is recommended to keep the default configuration and use with dnsmasq</p>
 <pre><code>[Local DNS]
 Local Protocol = IPv4 + UDP
 Local Hosts = 0

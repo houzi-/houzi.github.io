@@ -67,7 +67,7 @@
 <meta property="og:description" content="Configuration OverviewPlatformmipselarmv7SystemTomato shibby v1.28.0000 MIPSR2-132)Tomato shibby v1.28.0000 K26ARM-132SupportallallDependentware_mipsel-install_arm.shntware_arm-install_arm.sh">
 <meta property="og:image" content="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_1.PNG">
 <meta property="og:image" content="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_2.PNG">
-<meta property="og:updated_time" content="2016-02-18T05:36:12.411Z">
+<meta property="og:updated_time" content="2016-02-29T09:47:10.506Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tomato-ShadowSocks(armv7+mipsel)">
 <meta name="twitter:description" content="Configuration OverviewPlatformmipselarmv7SystemTomato shibby v1.28.0000 MIPSR2-132)Tomato shibby v1.28.0000 K26ARM-132SupportallallDependentware_mipsel-install_arm.shntware_arm-install_arm.sh">
@@ -319,17 +319,18 @@
 <li><strong>If it is mounted JFFS, you should keep the default</strong></li>
 <li><strong>If it is mounted U disk, You should change the <code>PREFIX=/mnt/sda1</code></strong></li>
 </ol>
-<h2 id="Installation_script_shadowsocks"><a href="#Installation_script_shadowsocks" class="headerlink" title="Installation script shadowsocks"></a>Installation script shadowsocks</h2><p><strong>Download:<code>shadowsocks-libev_2.4.3-1-RC、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.5.0-1、resolvip_0.1、diffutils3.3-3</code>upload to the router /tmp directory</strong></p>
+<h2 id="Installation_script_shadowsocks"><a href="#Installation_script_shadowsocks" class="headerlink" title="Installation script shadowsocks"></a>Installation script shadowsocks</h2><p><strong>Download:<code>shadowsocks-libev_2.4.3-1-RC、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.5.0-1、resolvip_0.1、diffutils3.3-3 dnscrypt-proxy_1.6.0-1 curl_7.47.2-DEV(mipsel)</code>upload to the router /tmp directory</strong></p>
 <p><strong>Enter <code>chmod +x /tmp/shadowsocks</code> given execute permissions</strong><br><strong>Installation <code>/tmp/shadowsocks set_up</code></strong></p>
 <p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_1.PNG" alt=""></p>
 <h2 id="Configuration_shadowsocks_Account"><a href="#Configuration_shadowsocks_Account" class="headerlink" title="Configuration shadowsocks Account"></a>Configuration shadowsocks Account</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_2.PNG" alt=""></p>
 <p><strong><font color="red">note:</font>Local Server Port and Sever Port Do not backwards</strong></p>
-<h2 id="Select_agent_program"><a href="#Select_agent_program" class="headerlink" title="Select agent program"></a>Select agent program</h2><table><tr><td>Option</td><td><center>mipsel+armv7</center></td></tr><tr><td><center>1</center></td><td>ss-redir+gfwlist+pdnsd</td></tr><tr><td><center>2</center></td><td>ss-redir+chnroutes+chinadns+pdnsd</td></tr><tr><td><center>3</center></td><td>ss-redir+chnroutes+pcap_dnsproxy</td></tr><tr><td><center>4</center></td><td>ss-tunnel+chnroutes+chinadns</td></tr></table>
+<h2 id="Select_agent_program"><a href="#Select_agent_program" class="headerlink" title="Select agent program"></a>Select agent program</h2><table><tr><td>Option</td><td><center>mipsel+armv7</center></td></tr><tr><td><center>1</center></td><td>ss-redir+gfwlist+pdnsd</td></tr><tr><td><center>2</center></td><td>ss-redir+chnroutes+chinadns+pdnsd</td></tr><tr><td><center>3</center></td><td>ss-redir+chnroutes+chinadns+dnscrypt-proxy</td></tr><tr><td><center>4</center></td><td>ss-redir+chnroutes+pcap_dnsproxy</td></tr><tr><td><center>5</center></td><td>ss-tunnel+chnroutes+chinadns</td></tr></table>
 
-<p><strong>I’m currently using Option <code>3</code> , Option <code>3</code> is recommended</strong><br><strong><font color="red">note:</font></strong></p>
+<p><strong><font color="red">note:</font></strong></p>
 <ol>
 <li><strong>If the configuration is successful you can use directly shadowsocks Agent</strong></li>
-<li><strong>If you use Option <code>3</code> appears unable to use shadowsocks agents may be Pcap_DNSProxy process dies , so you should enter <code>/opt/etc/init.d/S27pcap_dnsprox start</code></strong></li>
+<li><strong>If you use Option <code>4</code> appears unable to use shadowsocks agents may be Pcap_DNSProxy process dies , so you should enter <code>/opt/etc/init.d/S27pcap_dnsprox start</code>(Recommend)</strong></li>
+<li><strong>If you use Option <code>3</code> appears unable to use shadowsocks agents may be dnscrypt-proxy suspended animation, so should enter <code>/opt/etc/init.d/S29dnscrypt-proxy restart</code>(Unstable)</strong></li>
 </ol>
 <h2 id="Reboot_Router"><a href="#Reboot_Router" class="headerlink" title="Reboot Router"></a>Reboot Router</h2><h2 id="FQ"><a href="#FQ" class="headerlink" title="FQ"></a>FQ</h2><p><strong>Configuration Pcap_DNSProxyDNS resolve</strong></p>
 <p><font color="red">note:</font>Edit Pcap_DNSProxy of <code>Config.conf</code> file ( The file path : /opt/etc/pcap_dnsproxy)</p>

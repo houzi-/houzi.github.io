@@ -468,7 +468,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
     <link href="http://yoursite.com/2016/02/03/Tomato-ShadowSocks/"/>
     <id>http://yoursite.com/2016/02/03/Tomato-ShadowSocks/</id>
     <published>2016-02-03T15:14:12.000Z</published>
-    <updated>2016-03-06T03:19:30.098Z</updated>
+    <updated>2016-03-06T04:52:15.344Z</updated>
     <content type="html"><![CDATA[<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>mipsel</center></td><td><center>armv7</center></td></tr><tr><td>System</td><td>Tomato shibby v1.28.0000 MIPSR2-133</td><td>Tomato shibby v1.28.0000 K26ARM-133</td></tr><tr><td>Support</td><td><center>all</center></td><td><center>all</center></td></tr><tr><td>Depend</td><td>entware_mipsel-install_arm.sh</td><td>entware_arm-install_arm.sh</td></tr></table>
 
 <a id="more"></a>
@@ -487,7 +487,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
 <li><strong>If it is mounted JFFS, you should keep the default</strong></li>
 <li><strong>If it is mounted U disk, You should change the <code>PREFIX=/mnt/sda1</code></strong></li>
 </ol>
-<h2 id="Installation_script_shadowsocks"><a href="#Installation_script_shadowsocks" class="headerlink" title="Installation script shadowsocks"></a>Installation script shadowsocks</h2><p><strong>Download:<code>shadowsocks-libev_2.4.3-1-RC、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.5.0-1、resolvip_0.1、diffutils3.3-3 dnscrypt-proxy_1.6.0-1 curl_7.47.2-DEV(mipsel)</code>upload to the router /tmp directory</strong></p>
+<h2 id="Installation_script_shadowsocks"><a href="#Installation_script_shadowsocks" class="headerlink" title="Installation script shadowsocks"></a>Installation script shadowsocks</h2><p><strong>Download:<code>shadowsocks-libev_2.4.5-1、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.5.3-1、resolvip_0.1、diffutils3.3-3 dnscrypt-proxy_1.6.1-1 curl_7.47.2-DEV(mipsel)</code>upload to the router /tmp directory</strong></p>
 <p><strong>Enter <code>chmod +x /tmp/shadowsocks</code> given execute permissions</strong><br><strong>Installation <code>/tmp/shadowsocks set_up</code></strong></p>
 <p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_1.PNG" alt=""></p>
 <h2 id="Configuration_shadowsocks_Account"><a href="#Configuration_shadowsocks_Account" class="headerlink" title="Configuration shadowsocks Account"></a>Configuration shadowsocks Account</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_2.PNG" alt=""></p>

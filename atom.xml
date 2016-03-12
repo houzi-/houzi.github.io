@@ -3,9 +3,9 @@
   <title><![CDATA[HOUZI的博客]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
+  <link href="http://www.router008.com/"/>
   <updated>2016-02-20T17:59:36.115Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://www.router008.com/</id>
   
   <author>
     <name><![CDATA[HOUZI的博客]]></name>
@@ -16,12 +16,12 @@
   
   <entry>
     <title><![CDATA[Tomato-shadowsocks Scripting Guide]]></title>
-    <link href="http://yoursite.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/"/>
-    <id>http://yoursite.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</id>
+    <link href="http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/"/>
+    <id>http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</id>
     <published>2016-02-14T00:45:46.000Z</published>
     <updated>2016-02-20T17:59:36.115Z</updated>
     <content type="html"><![CDATA[<h2 id="u90E8_u7F72_u6559_u7A0B"><a href="#u90E8_u7F72_u6559_u7A0B" class="headerlink" title="部署教程"></a>部署教程</h2><blockquote>
-<p><a href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/" title="Tomato-ShadowSocks(armv7+mipsel)" target="_blank" rel="external">http://www.router008.com/2016/02/03/Tomato-ShadowSocks/</a></p>
+<p><a href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/" title="Tomato-ShadowSocks(armv7+mipsel)">http://www.router008.com/2016/02/03/Tomato-ShadowSocks/</a></p>
 </blockquote>
 <a id="more"></a>
 <h2 id="u811A_u672C_u53C2_u6570_u4ECB_u7ECD"><a href="#u811A_u672C_u53C2_u6570_u4ECB_u7ECD" class="headerlink" title="脚本参数介绍"></a>脚本参数介绍</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line">set_up)</span><br><span class="line">    ShadowSocks自动安装部署</span><br><span class="line">    关联`run` `ipset` `rules`</span><br><span class="line"></span><br><span class="line">run)</span><br><span class="line">    关联`set_up`起到安装部署过程中启动程序和更新IP列表的作用也可以独立运行，例如跟着路由器一起开机启动</span><br><span class="line">    关联`update_chnroutes` `update_gfwlist` `flush` `rules`</span><br><span class="line"></span><br><span class="line">ipset)</span><br><span class="line">    加载使用IPSET所需要的模块</span><br><span class="line">    也可以独立运行，例如跟着路由器一起开机启动</span><br><span class="line"></span><br><span class="line">rules)</span><br><span class="line">    加载各个方案所需要的iptables rules</span><br><span class="line">    也可以独立运行，例如跟着路由器一起开机启动</span><br><span class="line"></span><br><span class="line">global)</span><br><span class="line">    开启和关闭[2][3][4]方案的全局代理模式</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行</span><br><span class="line"></span><br><span class="line">flush)</span><br><span class="line">    清空防iptanles之前加载的rules，恢复iptables默认</span><br><span class="line">    可以独立运行</span><br><span class="line"></span><br><span class="line">update)</span><br><span class="line">    [2][3][4]方案更新中国IP列表、Host、Routing</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行	</span><br><span class="line"></span><br><span class="line">update_gfwlist)</span><br><span class="line">    [1]方案更新GFWLIST</span><br><span class="line">    可以独立运行	</span><br><span class="line"></span><br><span class="line">check)</span><br><span class="line">    守护各个方案的进程</span><br><span class="line">    可以独立运行	</span><br><span class="line"></span><br><span class="line">ss_switch)</span><br><span class="line">    shadowsocks账号切换</span><br><span class="line">    多种模式账号切换:</span><br><span class="line">    [修改json文件] 主要用于各个不同[密码][加密方式][端口]</span><br><span class="line">    [修改IP] 主要用于相同[密码][加密方式][端口]</span><br><span class="line">    关联`run`</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">mult_switch)</span><br><span class="line">    `ss_switch`的强化版本</span><br><span class="line">    带有6个shadowsocks账号的储存和写入功能</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行	 </span><br><span class="line">	</span><br><span class="line">lan_ignore)</span><br><span class="line">    [2][3][4]方案的本地局域网设备使用代理控制</span><br><span class="line">    多种写入IP方式:</span><br><span class="line">    [连接路由器的全部IP]</span><br><span class="line">    [自定义手动输入]</span><br><span class="line">    多种控制模式:</span><br><span class="line">    [仅允许列表内]</span><br><span class="line">    [除了列表内]</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">off_on)</span><br><span class="line">    关闭和开启代理</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">update_rebuild)</span><br><span class="line">    更新脚本和重新设置脚本</span><br><span class="line">    多种模式:</span><br><span class="line">    [仅更新脚本] 主要用于脚本小幅度更新,如果脚本有大幅度功能的变化,此模式并不适用</span><br><span class="line">    [重新设置脚本] 主要用于脚本大幅度更新和小幅度更新</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行</span><br><span class="line">     	 </span><br><span class="line">*mail)</span><br><span class="line">    邮件提醒</span><br><span class="line">    可以独立运行</span><br><span class="line"></span><br><span class="line">*temp) */XIAOMI R1D/*</span><br><span class="line">    风扇控制</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">*temp_s) */XIAOMI R1D/*</span><br><span class="line">    风扇开启夜间静音模式</span><br><span class="line">    可以独立运行</span><br></pre></td></tr></table></figure>
@@ -33,18 +33,18 @@
     
     </summary>
     
-      <category term="Tomato" scheme="http://yoursite.com/tags/Tomato/"/>
+      <category term="Tomato" scheme="http://www.router008.com/tags/Tomato/"/>
     
-      <category term="路由器" scheme="http://yoursite.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+      <category term="路由器" scheme="http://www.router008.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     
-      <category term="Tomato" scheme="http://yoursite.com/categories/Tomato/"/>
+      <category term="Tomato" scheme="http://www.router008.com/categories/Tomato/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[OpenWRT Guide]]></title>
-    <link href="http://yoursite.com/2016/02/05/OpenWRT-Guide/"/>
-    <id>http://yoursite.com/2016/02/05/OpenWRT-Guide/</id>
+    <link href="http://www.router008.com/2016/02/05/OpenWRT-Guide/"/>
+    <id>http://www.router008.com/2016/02/05/OpenWRT-Guide/</id>
     <published>2016-02-05T13:20:36.000Z</published>
     <updated>2016-02-14T00:52:02.195Z</updated>
     <content type="html"><![CDATA[<h2 id="u914D_u7F6E_u7F16_u8BD1_u73AF_u5883"><a href="#u914D_u7F6E_u7F16_u8BD1_u73AF_u5883" class="headerlink" title="配置编译环境"></a>配置编译环境</h2><p>必须使用<strong>非root用户</strong>，ArchLinux需要创建新用户。</p>
@@ -394,18 +394,18 @@ $ yaourt -S bcc jikes
     
     </summary>
     
-      <category term="OpenWRT" scheme="http://yoursite.com/tags/OpenWRT/"/>
+      <category term="OpenWRT" scheme="http://www.router008.com/tags/OpenWRT/"/>
     
-      <category term="路由器" scheme="http://yoursite.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+      <category term="路由器" scheme="http://www.router008.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     
-      <category term="OpenWRT" scheme="http://yoursite.com/categories/OpenWRT/"/>
+      <category term="OpenWRT" scheme="http://www.router008.com/categories/OpenWRT/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Ubuntu开发环境搭建]]></title>
-    <link href="http://yoursite.com/2016/02/05/ubuntu-development-environment/"/>
-    <id>http://yoursite.com/2016/02/05/ubuntu-development-environment/</id>
+    <link href="http://www.router008.com/2016/02/05/ubuntu-development-environment/"/>
+    <id>http://www.router008.com/2016/02/05/ubuntu-development-environment/</id>
     <published>2016-02-05T08:55:24.000Z</published>
     <updated>2016-02-05T09:05:24.730Z</updated>
     <content type="html"><![CDATA[<h2 id="u4E00-__u5B89_u88C5C_uFF0FC_uFF0B_uFF0B_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883"><a href="#u4E00-__u5B89_u88C5C_uFF0FC_uFF0B_uFF0B_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883" class="headerlink" title="一. 安装C／C＋＋程序的开发环境"></a>一. 安装C／C＋＋程序的开发环境</h2><pre><code>sudo apt-get install build-essential //安装主要编译工具 包括gcc, g++, make 
@@ -439,16 +439,16 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
     
     </summary>
     
-      <category term="developmen" scheme="http://yoursite.com/tags/developmen/"/>
+      <category term="developmen" scheme="http://www.router008.com/tags/developmen/"/>
     
-      <category term="编程开发" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
+      <category term="编程开发" scheme="http://www.router008.com/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Scratch]]></title>
-    <link href="http://yoursite.com/2016/02/04/Scratch/"/>
-    <id>http://yoursite.com/2016/02/04/Scratch/</id>
+    <link href="http://www.router008.com/2016/02/04/Scratch/"/>
+    <id>http://www.router008.com/2016/02/04/Scratch/</id>
     <published>2016-02-03T17:16:27.000Z</published>
     <updated>2016-02-05T05:20:44.754Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B.jpg" alt=""><br>过去的已成回忆！过去的就让他过去吧！由于之前的文章写的太杂乱，重新写吧！</p>
@@ -457,16 +457,16 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
     <![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B.jpg" alt=""><br>过去的已成回忆！过去的就让他过去吧！由于之前的文章写的太杂乱，重新写吧！]]>
     </summary>
     
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="http://www.router008.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
-      <category term="杂碎" scheme="http://yoursite.com/categories/%E6%9D%82%E7%A2%8E/"/>
+      <category term="杂碎" scheme="http://www.router008.com/categories/%E6%9D%82%E7%A2%8E/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Tomato-ShadowSocks(armv7+mipsel)]]></title>
-    <link href="http://yoursite.com/2016/02/03/Tomato-ShadowSocks/"/>
-    <id>http://yoursite.com/2016/02/03/Tomato-ShadowSocks/</id>
+    <link href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/"/>
+    <id>http://www.router008.com/2016/02/03/Tomato-ShadowSocks/</id>
     <published>2016-02-03T15:14:12.000Z</published>
     <updated>2016-03-06T04:52:15.344Z</updated>
     <content type="html"><![CDATA[<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>mipsel</center></td><td><center>armv7</center></td></tr><tr><td>System</td><td>Tomato shibby v1.28.0000 MIPSR2-133</td><td>Tomato shibby v1.28.0000 K26ARM-133</td></tr><tr><td>Support</td><td><center>all</center></td><td><center>all</center></td></tr><tr><td>Depend</td><td>entware_mipsel-install_arm.sh</td><td>entware_arm-install_arm.sh</td></tr></table>
@@ -520,7 +520,7 @@ IPv4 Alternate DNS Address = 8.8.4.4:53|208.67.220.220:443|208.67.222.222:5353 #
 IPv4 Local DNS Address = 114.114.114.114:53 #Domestic DNS. Try to fill your own ISP&apos;s DNS
 IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
 </code></pre><h2 id="Usage_wiki"><a href="#Usage_wiki" class="headerlink" title="Usage wiki"></a>Usage wiki</h2><blockquote>
-<p><a href="http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/" target="_blank" rel="external">http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</a></p>
+<p><a href="http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/">http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</a></p>
 </blockquote>
 <h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><p><a href="https://github.com/houzi-/tomato-shadowsocks/releases" target="_blank" rel="external">shadowsocks script</a><br><a href="http://pan.baidu.com/s/1mgYlk28" target="_blank" rel="external">mipsel packages</a> <strong>password:<code>i3q0</code></strong><br><a href="http://pan.baidu.com/s/1dDNAdXn" target="_blank" rel="external">armv7 packages</a> <strong>password:<code>pldi</code></strong></p>
 <h2 id="Information_Reference"><a href="#Information_Reference" class="headerlink" title="Information Reference"></a>Information Reference</h2><blockquote>
@@ -535,18 +535,18 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     
     </summary>
     
-      <category term="Tomato" scheme="http://yoursite.com/tags/Tomato/"/>
+      <category term="Tomato" scheme="http://www.router008.com/tags/Tomato/"/>
     
-      <category term="路由器" scheme="http://yoursite.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+      <category term="路由器" scheme="http://www.router008.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     
-      <category term="Tomato" scheme="http://yoursite.com/categories/Tomato/"/>
+      <category term="Tomato" scheme="http://www.router008.com/categories/Tomato/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2016/02/02/hello-world/"/>
-    <id>http://yoursite.com/2016/02/02/hello-world/</id>
+    <link href="http://www.router008.com/2016/02/02/hello-world/"/>
+    <id>http://www.router008.com/2016/02/02/hello-world/</id>
     <published>2016-02-02T15:14:12.000Z</published>
     <updated>2016-02-05T05:32:09.724Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
@@ -565,9 +565,9 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     
     </summary>
     
-      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="http://www.router008.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
-      <category term="杂碎" scheme="http://yoursite.com/categories/%E6%9D%82%E7%A2%8E/"/>
+      <category term="杂碎" scheme="http://www.router008.com/categories/%E6%9D%82%E7%A2%8E/"/>
     
   </entry>
   

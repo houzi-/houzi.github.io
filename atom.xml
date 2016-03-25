@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.router008.com/"/>
-  <updated>2016-03-18T14:29:06.919Z</updated>
+  <updated>2016-03-25T11:03:32.521Z</updated>
   <id>http://www.router008.com/</id>
   
   <author>
@@ -13,6 +13,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Tomato-ShadowSocks(armv7)部署ADM广告过滤]]></title>
+    <link href="http://www.router008.com/2016/03/25/Tomato-adm/"/>
+    <id>http://www.router008.com/2016/03/25/Tomato-adm/</id>
+    <published>2016-03-25T08:56:53.000Z</published>
+    <updated>2016-03-25T11:03:32.521Z</updated>
+    <content type="html"><![CDATA[<h2 id="u90E8_u7F72_u539F_u56E0"><a href="#u90E8_u7F72_u539F_u56E0" class="headerlink" title="部署原因"></a>部署原因</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/adm.jpg" alt=""></p>
+<p>有同学会问我，为什么你突发奇想来弄广告过滤，呵呵！我真的不好意思说出口了(T＿T)! 最近我在看《太阳的什么鬼后裔》,每次看一集就来个一分多钟的广告，真的是受不了！有人直接说直接在浏览器或者电脑上安装得了，有必要弄得这么麻烦吗？Oh,shit! My world you do not know! 作为一名准程序员和GEEK必须得装一下逼ψ(｀∇´)ψ,不扯B了…..</p>
+<a id="more"></a>
+<h2 id="u90E8_u7F72_u8FC7_u7A0B"><a href="#u90E8_u7F72_u8FC7_u7A0B" class="headerlink" title="部署过程"></a>部署过程</h2><p><font color="red">note:</font>本教程依赖于<a href="https://github.com/houzi-/tomato-shadowsocks/releases" target="_blank" rel="external">Tomato-shadowsocks</a>脚本,因此可以和shadowsocks-libev共同使用,不会产生冲突！</p>
+<h3 id="u5B89_u88C5ADM"><a href="#u5B89_u88C5ADM" class="headerlink" title="安装ADM"></a>安装ADM</h3><p><font color="red">note:</font>如果是第一次部署<code>Tomato-shadowsocks</code>脚本,别直接安装ADM,要部署<a href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/"><font color="red">教程</font></a>完脚本后再进行安装！<br>上传<code>admflt_2.1.3_armv7soft.ipk</code>到<code>/tmp</code>目录,然后<code>admflt_2.1.3_armv7soft.ipk</code></p>
+<h3 id="Tomato-shadowsocks_u5F00_u542F_u652F_u6301"><a href="#Tomato-shadowsocks_u5F00_u542F_u652F_u6301" class="headerlink" title="Tomato-shadowsocks开启支持"></a>Tomato-shadowsocks开启支持</h3><p>在脚本的32行:<code>adm_filter=0 ==&gt; adm_filter=1</code></p>
+<h3 id="u91CD_u542F_u8DEF_u7531_u5668"><a href="#u91CD_u542F_u8DEF_u7531_u5668" class="headerlink" title="重启路由器"></a>重启路由器</h3><h2 id="feature"><a href="#feature" class="headerlink" title="feature"></a>feature</h2><blockquote>
+<p>1.下次更新会添加mipsel支持</p>
+<p>2.加入IPSET来控制过滤的网站</p>
+</blockquote>
+<h2 id="u63D2_u4EF6_u4E0B_u8F7D"><a href="#u63D2_u4EF6_u4E0B_u8F7D" class="headerlink" title="插件下载"></a>插件下载</h2><blockquote>
+<p><a href="http://pan.baidu.com/s/1dDNAdXn" target="_blank" rel="external">armv7 packages</a> <strong>password:<code>pldi</code></strong></p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="u90E8_u7F72_u539F_u56E0"><a href="#u90E8_u7F72_u539F_u56E0" class="headerlink" title="部署原因"></a>部署原因</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/adm.jpg" alt=""></p>
+<p>有同学会问我，为什么你突发奇想来弄广告过滤，呵呵！我真的不好意思说出口了(T＿T)! 最近我在看《太阳的什么鬼后裔》,每次看一集就来个一分多钟的广告，真的是受不了！有人直接说直接在浏览器或者电脑上安装得了，有必要弄得这么麻烦吗？Oh,shit! My world you do not know! 作为一名准程序员和GEEK必须得装一下逼ψ(｀∇´)ψ,不扯B了…..</p>]]>
+    
+    </summary>
+    
+      <category term="Tomato" scheme="http://www.router008.com/tags/Tomato/"/>
+    
+      <category term="路由器" scheme="http://www.router008.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    
+      <category term="Tomato" scheme="http://www.router008.com/categories/Tomato/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Tomato-shadowsocks Scripting Guide]]></title>

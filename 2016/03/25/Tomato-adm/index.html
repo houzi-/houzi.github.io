@@ -68,7 +68,7 @@
 <meta property="og:description" content="部署原因
 有同学会问我，为什么你突发奇想来弄广告过滤，呵呵！我真的不好意思说出口了(T＿T)! 最近我在看《太阳的什么鬼后裔》,每次看一集就来个一分多钟的广告，真的是受不了！有人直接说直接在浏览器或者电脑上安装得了，有必要弄得这么麻烦吗？Oh,shit! My world you do not know! 作为一名准程序员和GEEK必须得装一下逼ψ(｀∇´)ψ,不扯B了…..">
 <meta property="og:image" content="http://7xpjbv.com1.z0.glb.clouddn.com/adm.jpg">
-<meta property="og:updated_time" content="2016-04-01T15:43:35.015Z">
+<meta property="og:updated_time" content="2016-04-03T05:42:21.081Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tomato-ShadowSocks(armv7+mipsel)部署(ADM/adbyby)广告过滤">
 <meta name="twitter:description" content="部署原因
@@ -306,16 +306,17 @@
         <h2 id="u90E8_u7F72_u539F_u56E0"><a href="#u90E8_u7F72_u539F_u56E0" class="headerlink" title="部署原因"></a>部署原因</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/adm.jpg" alt=""></p>
 <p>有同学会问我，为什么你突发奇想来弄广告过滤，呵呵！我真的不好意思说出口了(T＿T)! 最近我在看《太阳的什么鬼后裔》,每次看一集就来个一分多钟的广告，真的是受不了！有人直接说直接在浏览器或者电脑上安装得了，有必要弄得这么麻烦吗？Oh,shit! My world you do not know! 作为一名准程序员和GEEK必须得装一下逼ψ(｀∇´)ψ,不扯B了…..</p>
 <a id="more"></a>
-<h2 id="u90E8_u7F72_u8FC7_u7A0B"><a href="#u90E8_u7F72_u8FC7_u7A0B" class="headerlink" title="部署过程"></a>部署过程</h2><font color="red">note:</font>本教程依赖于<a href="https://github.com/houzi-/tomato-shadowsocks/releases" target="_blank" rel="external">Tomato-shadowsocks</a>脚本,因此可以和shadowsocks-libev共同使用,不会产生冲突！<br><br>### 安装ADM<br><br><font color="red">note:</font>如果是第一次部署<code>Tomato-shadowsocks</code>脚本,别直接安装ADM,要部署&lt; <a href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/"><font color="red">教程</font></a> &gt;完脚本后再进行安装！<br>上传<code>admflt_1.3.3_armv7soft.ipk(armv7) adbyby_2.5.0-1_mipselsf.ipk(mipsel)</code>到<code>/tmp</code>目录,然后<code>opkg install xxxx.ipk</code><br><br><font color="red"><br>1.如果使用广告过滤将会导致QOS功能失效<br>2.偶尔也会造成卡网的现象<br></font>
-
+<h2 id="u90E8_u7F72_u8FC7_u7A0B"><a href="#u90E8_u7F72_u8FC7_u7A0B" class="headerlink" title="部署过程"></a>部署过程</h2><p><font color="red">note:</font>本教程依赖于<a href="https://github.com/houzi-/tomato-shadowsocks/releases" target="_blank" rel="external">Tomato-shadowsocks</a>脚本,因此可以和shadowsocks-libev共同使用,不会产生冲突！</p>
+<h3 id="u5B89_u88C5ADM"><a href="#u5B89_u88C5ADM" class="headerlink" title="安装ADM"></a>安装ADM</h3><p><font color="red">note:</font>如果是第一次部署<code>Tomato-shadowsocks</code>脚本,别直接安装ADM,要部署&lt; <a href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/"><font color="red">教程</font></a> &gt;完脚本后再进行安装！<br>上传<code>admflt_1.3.3_armv7soft.ipk(armv7) adbyby_2.5.0-1_mipselsf.ipk(mipsel)</code>到<code>/tmp</code>目录,然后<code>opkg install xxxx.ipk</code></p>
 <h3 id="Tomato-shadowsocks_u5F00_u542F_u652F_u6301"><a href="#Tomato-shadowsocks_u5F00_u542F_u652F_u6301" class="headerlink" title="Tomato-shadowsocks开启支持"></a>Tomato-shadowsocks开启支持</h3><p>(armv7)在脚本的32行:<code>adm_filter=0 ==&gt; adm_filter=1</code><br>(mipsel)在脚本的29行:<code>adbyby_filter=0 ==&gt; adbyby_filter=1</code></p>
 <h3 id="u91CD_u542F_u8DEF_u7531_u5668"><a href="#u91CD_u542F_u8DEF_u7531_u5668" class="headerlink" title="重启路由器"></a>重启路由器</h3><h2 id="feature"><a href="#feature" class="headerlink" title="feature"></a>feature</h2><blockquote>
 <p><del>1.下次更新会添加mipsel支持</del></p>
-<p>2.加入IPSET来控制过滤的网站</p>
+<p><del>2.加入IPSET来控制过滤的网站和本地局域网设备过滤的网站控制</del></p>
 </blockquote>
 <h2 id="u63D2_u4EF6_u4E0B_u8F7D"><a href="#u63D2_u4EF6_u4E0B_u8F7D" class="headerlink" title="插件下载"></a>插件下载</h2><blockquote>
 <p><a href="http://pan.baidu.com/s/1dDNAdXn" target="_blank" rel="external">armv7 packages</a> <strong>password:<code>pldi</code></strong><br><a href="http://pan.baidu.com/s/1mgYlk28" target="_blank" rel="external">mipsel packages</a> <strong>password:<code>i3q0</code></strong></p>
 </blockquote>
+<h2 id="u5F71_u54CD"><a href="#u5F71_u54CD" class="headerlink" title="影响"></a>影响</h2><p><u><strong>1.如果使用广告过滤将会导致QOS功能失效</strong></u><br><u><strong>2.偶尔也会造成卡网的现象</strong></u><br><u><strong>3.会造成80 port进出站的数据被过滤</strong></u></p>
 
       
     </div>
@@ -513,7 +514,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u90E8_u7F72_u539F_u56E0"><span class="nav-number">1.</span> <span class="nav-text">部署原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u90E8_u7F72_u8FC7_u7A0B"><span class="nav-number">2.</span> <span class="nav-text">部署过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tomato-shadowsocks_u5F00_u542F_u652F_u6301"><span class="nav-number">2.1.</span> <span class="nav-text">Tomato-shadowsocks开启支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u91CD_u542F_u8DEF_u7531_u5668"><span class="nav-number">2.2.</span> <span class="nav-text">重启路由器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#feature"><span class="nav-number">3.</span> <span class="nav-text">feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u63D2_u4EF6_u4E0B_u8F7D"><span class="nav-number">4.</span> <span class="nav-text">插件下载</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u90E8_u7F72_u539F_u56E0"><span class="nav-number">1.</span> <span class="nav-text">部署原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u90E8_u7F72_u8FC7_u7A0B"><span class="nav-number">2.</span> <span class="nav-text">部署过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B89_u88C5ADM"><span class="nav-number">2.1.</span> <span class="nav-text">安装ADM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tomato-shadowsocks_u5F00_u542F_u652F_u6301"><span class="nav-number">2.2.</span> <span class="nav-text">Tomato-shadowsocks开启支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u91CD_u542F_u8DEF_u7531_u5668"><span class="nav-number">2.3.</span> <span class="nav-text">重启路由器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#feature"><span class="nav-number">3.</span> <span class="nav-text">feature</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u63D2_u4EF6_u4E0B_u8F7D"><span class="nav-number">4.</span> <span class="nav-text">插件下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5F71_u54CD"><span class="nav-number">5.</span> <span class="nav-text">影响</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

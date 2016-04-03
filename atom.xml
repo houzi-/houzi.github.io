@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.router008.com/"/>
-  <updated>2016-04-01T15:43:35.015Z</updated>
+  <updated>2016-04-03T05:42:21.081Z</updated>
   <id>http://www.router008.com/</id>
   
   <author>
@@ -19,20 +19,21 @@
     <link href="http://www.router008.com/2016/03/25/Tomato-adm/"/>
     <id>http://www.router008.com/2016/03/25/Tomato-adm/</id>
     <published>2016-03-25T08:56:53.000Z</published>
-    <updated>2016-04-01T15:43:35.015Z</updated>
+    <updated>2016-04-03T05:42:21.081Z</updated>
     <content type="html"><![CDATA[<h2 id="u90E8_u7F72_u539F_u56E0"><a href="#u90E8_u7F72_u539F_u56E0" class="headerlink" title="部署原因"></a>部署原因</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/adm.jpg" alt=""></p>
 <p>有同学会问我，为什么你突发奇想来弄广告过滤，呵呵！我真的不好意思说出口了(T＿T)! 最近我在看《太阳的什么鬼后裔》,每次看一集就来个一分多钟的广告，真的是受不了！有人直接说直接在浏览器或者电脑上安装得了，有必要弄得这么麻烦吗？Oh,shit! My world you do not know! 作为一名准程序员和GEEK必须得装一下逼ψ(｀∇´)ψ,不扯B了…..</p>
 <a id="more"></a>
-<h2 id="u90E8_u7F72_u8FC7_u7A0B"><a href="#u90E8_u7F72_u8FC7_u7A0B" class="headerlink" title="部署过程"></a>部署过程</h2><font color="red">note:</font>本教程依赖于<a href="https://github.com/houzi-/tomato-shadowsocks/releases" target="_blank" rel="external">Tomato-shadowsocks</a>脚本,因此可以和shadowsocks-libev共同使用,不会产生冲突！<br><br>### 安装ADM<br><br><font color="red">note:</font>如果是第一次部署<code>Tomato-shadowsocks</code>脚本,别直接安装ADM,要部署&lt; <a href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/"><font color="red">教程</font></a> &gt;完脚本后再进行安装！<br>上传<code>admflt_1.3.3_armv7soft.ipk(armv7) adbyby_2.5.0-1_mipselsf.ipk(mipsel)</code>到<code>/tmp</code>目录,然后<code>opkg install xxxx.ipk</code><br><br><font color="red"><br>1.如果使用广告过滤将会导致QOS功能失效<br>2.偶尔也会造成卡网的现象<br></font>
-
+<h2 id="u90E8_u7F72_u8FC7_u7A0B"><a href="#u90E8_u7F72_u8FC7_u7A0B" class="headerlink" title="部署过程"></a>部署过程</h2><p><font color="red">note:</font>本教程依赖于<a href="https://github.com/houzi-/tomato-shadowsocks/releases" target="_blank" rel="external">Tomato-shadowsocks</a>脚本,因此可以和shadowsocks-libev共同使用,不会产生冲突！</p>
+<h3 id="u5B89_u88C5ADM"><a href="#u5B89_u88C5ADM" class="headerlink" title="安装ADM"></a>安装ADM</h3><p><font color="red">note:</font>如果是第一次部署<code>Tomato-shadowsocks</code>脚本,别直接安装ADM,要部署&lt; <a href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/"><font color="red">教程</font></a> &gt;完脚本后再进行安装！<br>上传<code>admflt_1.3.3_armv7soft.ipk(armv7) adbyby_2.5.0-1_mipselsf.ipk(mipsel)</code>到<code>/tmp</code>目录,然后<code>opkg install xxxx.ipk</code></p>
 <h3 id="Tomato-shadowsocks_u5F00_u542F_u652F_u6301"><a href="#Tomato-shadowsocks_u5F00_u542F_u652F_u6301" class="headerlink" title="Tomato-shadowsocks开启支持"></a>Tomato-shadowsocks开启支持</h3><p>(armv7)在脚本的32行:<code>adm_filter=0 ==&gt; adm_filter=1</code><br>(mipsel)在脚本的29行:<code>adbyby_filter=0 ==&gt; adbyby_filter=1</code></p>
 <h3 id="u91CD_u542F_u8DEF_u7531_u5668"><a href="#u91CD_u542F_u8DEF_u7531_u5668" class="headerlink" title="重启路由器"></a>重启路由器</h3><h2 id="feature"><a href="#feature" class="headerlink" title="feature"></a>feature</h2><blockquote>
 <p><del>1.下次更新会添加mipsel支持</del></p>
-<p>2.加入IPSET来控制过滤的网站</p>
+<p><del>2.加入IPSET来控制过滤的网站和本地局域网设备过滤的网站控制</del></p>
 </blockquote>
 <h2 id="u63D2_u4EF6_u4E0B_u8F7D"><a href="#u63D2_u4EF6_u4E0B_u8F7D" class="headerlink" title="插件下载"></a>插件下载</h2><blockquote>
 <p><a href="http://pan.baidu.com/s/1dDNAdXn" target="_blank" rel="external">armv7 packages</a> <strong>password:<code>pldi</code></strong><br><a href="http://pan.baidu.com/s/1mgYlk28" target="_blank" rel="external">mipsel packages</a> <strong>password:<code>i3q0</code></strong></p>
 </blockquote>
+<h2 id="u5F71_u54CD"><a href="#u5F71_u54CD" class="headerlink" title="影响"></a>影响</h2><p><u><strong>1.如果使用广告过滤将会导致QOS功能失效</strong></u><br><u><strong>2.偶尔也会造成卡网的现象</strong></u><br><u><strong>3.会造成80 port进出站的数据被过滤</strong></u></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="u90E8_u7F72_u539F_u56E0"><a href="#u90E8_u7F72_u539F_u56E0" class="headerlink" title="部署原因"></a>部署原因</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/adm.jpg" alt=""></p>
@@ -517,7 +518,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
     <link href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/"/>
     <id>http://www.router008.com/2016/02/03/Tomato-ShadowSocks/</id>
     <published>2016-02-03T15:14:12.000Z</published>
-    <updated>2016-04-01T15:41:45.776Z</updated>
+    <updated>2016-04-03T05:29:47.051Z</updated>
     <content type="html"><![CDATA[<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>mipsel</center></td><td><center>armv7</center></td></tr><tr><td>System</td><td>Tomato shibby v1.28.0000 MIPSR2-135</td><td>Tomato shibby v1.28.0000 K26ARM-135</td></tr><tr><td>Support</td><td><center>all</center></td><td><center>all</center></td></tr><tr><td>Depend</td><td>entware_mipsel-install_arm.sh</td><td>entware_arm-install_arm.sh</td></tr></table>
 
 <a id="more"></a>
@@ -536,7 +537,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
 <li><strong>If it is mounted JFFS, you should keep the default</strong></li>
 <li><strong>If it is mounted U disk, You should change the <code>PREFIX=/mnt/sda1</code></strong></li>
 </ol>
-<h2 id="Installation_script_shadowsocks"><a href="#Installation_script_shadowsocks" class="headerlink" title="Installation script shadowsocks"></a>Installation script shadowsocks</h2><p><strong>Download:<code>shadowsocks-libev_2.4.5-1、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.5.3-1、resolvip_0.1、diffutils3.3-3 dnscrypt-proxy_1.6.1-1 curl_7.47.2-DEV(mipsel) dnsmasq-2.75 cron_4.1-2</code>upload to the router /tmp directory</strong></p>
+<h2 id="Installation_script_shadowsocks"><a href="#Installation_script_shadowsocks" class="headerlink" title="Installation script shadowsocks"></a>Installation script shadowsocks</h2><p><strong>Download:<code>shadowsocks-libev_2.4.5-1、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.5.3-1、resolvip_0.1、diffutils3.3-3 dnscrypt-proxy_1.6.1-1 curl_7.47.2-DEV(mipsel) dnsmasq-2.75 cron_4.1-2 zoneinfo-asia_2016b-1</code>upload to the router /tmp directory</strong></p>
 <p><strong>Enter <code>chmod +x /tmp/shadowsocks</code> given execute permissions</strong><br><strong>Installation <code>/tmp/shadowsocks set_up</code></strong></p>
 <p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_1.PNG" alt=""></p>
 <h2 id="Configuration_shadowsocks_Account"><a href="#Configuration_shadowsocks_Account" class="headerlink" title="Configuration shadowsocks Account"></a>Configuration shadowsocks Account</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_2.PNG" alt=""></p>

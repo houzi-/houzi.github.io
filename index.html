@@ -245,6 +245,129 @@
             
               
                 
+                <a class="post-title-link" href="/2016/04/05/python/" itemprop="url">
+                  我的python的新想法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-05T10:46:16+08:00" content="2016-04-05">
+              2016-04-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/05/python/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/05/python/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/04/05/python/" class="leancloud_visitors" data-flag-title="我的python的新想法">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="u6838_u5FC3_u4EE3_u7801_u5757"><a href="#u6838_u5FC3_u4EE3_u7801_u5757" class="headerlink" title="核心代码块"></a>核心代码块</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">GetCatPath</span><span class="params">(self)</span>:</span> <span class="comment">#主函数</span></span><br><span class="line">data = copy.deepcopy(self.map)</span><br><span class="line"><span class="comment">#data = self.map</span></span><br><span class="line">self.result=<span class="string">''</span> <span class="comment">#结果存放处</span></span><br><span class="line"><span class="comment">#方向定义</span></span><br><span class="line"><span class="comment">#dirs = [[-1,0,'L'],[0,-1,'U'],[1,0,'R'],[0,1,'D']]</span></span><br><span class="line"><span class="comment">#dirs2 = [[-1,0,'L'],[0,-1,'U'],[1,-1,'E'],[1,0,'R'],[1,1,'V'],[0,1,'D']]#%2=0</span></span><br><span class="line"><span class="comment">#dirs1 = [[-1,0,'L'],[-1,-1,'Q'],[0,-1,'U'],[1,0,'R'],[0,1,'D'],[-1,1,'Z']]</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">move</span><span class="params">(path,x,y,field)</span>:</span> <span class="comment">#移动函数</span></span><br><span class="line">	pathlen = len(path)</span><br><span class="line">	resultlen = len(self.result)</span><br><span class="line">	<span class="keyword">if</span> pathlen &gt;= resultlen <span class="keyword">and</span> resultlen != <span class="number">0</span>:<span class="comment">#这个条件很重要，当此时查找的路线已经比之前的长时就没必要查找了</span></span><br><span class="line">		<span class="keyword">return</span></span><br><span class="line">	field[y][x] = pathlen + <span class="number">1</span> <span class="comment">#把自己变成1, 防止无限递归</span></span><br><span class="line">	<span class="keyword">if</span> x <span class="keyword">in</span> [<span class="number">0</span>, <span class="number">8</span>] <span class="keyword">or</span> y <span class="keyword">in</span> [<span class="number">0</span>, <span class="number">8</span>]: <span class="comment">#如果到终点了</span></span><br><span class="line">		<span class="keyword">if</span> resultlen &gt; pathlen <span class="keyword">or</span> resultlen == <span class="number">0</span>:</span><br><span class="line">			self.result = path<span class="comment">#将路径放入结果</span></span><br><span class="line">			<span class="keyword">return</span></span><br><span class="line">	dirs = self.dirs1</span><br><span class="line">	<span class="keyword">if</span> y <span class="keyword">in</span> self.quickmodlist:<span class="comment">#发现比取模快上那么点</span></span><br><span class="line">		dirs = self.dirs2</span><br><span class="line">	<span class="keyword">for</span> d <span class="keyword">in</span> dirs: <span class="comment">#检查六个方向</span></span><br><span class="line">		<span class="keyword">if</span> y+d[<span class="number">1</span>] <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">9</span>) <span class="keyword">and</span> x+d[<span class="number">0</span>] <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">9</span>):</span><br><span class="line">			<span class="keyword">if</span> field[y+d[<span class="number">1</span>]][x+d[<span class="number">0</span>]] &gt; pathlen+<span class="number">1</span> <span class="keyword">or</span> field[y+d[<span class="number">1</span>]][x+d[<span class="number">0</span>]] == <span class="number">0</span>: <span class="comment">#如果某个方向为0</span></span><br><span class="line">				move(path+d[<span class="number">2</span>],x+d[<span class="number">0</span>],y+d[<span class="number">1</span>],field) <span class="comment">#递归</span></span><br><span class="line">move(<span class="string">''</span>,self.catpos[<span class="number">0</span>],self.catpos[<span class="number">1</span>],data) <span class="comment">#调用移动函数, 此时路径为空</span></span><br><span class="line">self.waysmap = data</span><br><span class="line"><span class="comment">#self.PrintMap()</span></span><br><span class="line"><span class="comment">#print ''</span></span><br><span class="line"><span class="comment">#self.PrintWaysMap()</span></span><br><span class="line"><span class="keyword">return</span> self.result</span><br></pre></td></tr></table></figure>
+<p>递归查找可能的路线，判断返回条件（如路线超过了前面的则返回或者是找到了新的路线），将直接决定你搜索的时间，原则是找到最短路径，这里可以加上通路数。<br>另外假设从0行开始，围住神经猫地图有个特性就是能取2的模为1的行都可以向右上，右下走，而为0的则可以向左上，左下走，所以要用行数判断具体的行走方向。</p>
+<h2 id="u9009_u62E9_u4E0E_u5224_u65AD"><a href="#u9009_u62E9_u4E0E_u5224_u65AD" class="headerlink" title="选择与判断"></a>选择与判断</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">shuffle</span><span class="params">(self, dataList)</span>:</span></span><br><span class="line">l = len(dataList)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> xrange(l):</span><br><span class="line">	j = random.randint(i,l-<span class="number">1</span>)</span><br><span class="line">	dataList[j],dataList[i] = dataList[i],dataList[j]</span><br><span class="line">			</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">GetRandomWays</span><span class="params">(self, col, row)</span>:</span></span><br><span class="line"><span class="keyword">if</span> col <span class="keyword">in</span> [<span class="number">0</span>, self.col-<span class="number">1</span>] <span class="keyword">or</span> row <span class="keyword">in</span> [<span class="number">0</span>, self.row-<span class="number">1</span>]:</span><br><span class="line">	<span class="keyword">return</span> col, row</span><br><span class="line">dirs = self.dirs1</span><br><span class="line"><span class="keyword">if</span> row <span class="keyword">in</span> self.quickmodlist:</span><br><span class="line">	dirs = self.dirs2</span><br><span class="line">randomlist = []</span><br><span class="line">	</span><br><span class="line">ways = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> d <span class="keyword">in</span> dirs: <span class="comment">#检查六个方向</span></span><br><span class="line">	<span class="keyword">if</span> self.IsFree(col+d[<span class="number">0</span>], row+d[<span class="number">1</span>]):</span><br><span class="line">		<span class="comment">#tempway = self.GetWays(col+d[0], row+d[1])</span></span><br><span class="line">		<span class="comment">#if tempway &gt; ways:</span></span><br><span class="line">		<span class="comment">#	ways = tempway</span></span><br><span class="line">		<span class="comment">#	randomlist = [(col+d[0], row+d[1])]</span></span><br><span class="line">		<span class="comment">#elif tempway == ways:</span></span><br><span class="line">			randomlist.append((col+d[<span class="number">0</span>], row+d[<span class="number">1</span>]))</span><br><span class="line"></span><br><span class="line">self.shuffle(randomlist)</span><br><span class="line"><span class="keyword">if</span> len(randomlist):</span><br><span class="line">	<span class="keyword">if</span> len(randomlist) &gt; <span class="number">1</span> <span class="keyword">and</span> (self.oldpos[<span class="number">0</span>], self.oldpos[<span class="number">1</span>]) <span class="keyword">in</span> randomlist:</span><br><span class="line">		randomlist.remove((self.oldpos[<span class="number">0</span>], self.oldpos[<span class="number">1</span>]))</span><br><span class="line">	<span class="keyword">return</span> randomlist[<span class="number">0</span>][<span class="number">0</span>],  randomlist[<span class="number">0</span>][<span class="number">1</span>]</span><br><span class="line">			</span><br><span class="line"><span class="keyword">return</span> -<span class="number">2</span>,-<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>掉自己之前的位置，如果实在无路可走则走之前的位置，这里说的无路可走是指通路相等的情况。<br>这个算法实现起来并不难，但有很多细节需要注意。</p>
+<h2 id="ME"><a href="#ME" class="headerlink" title="ME"></a>ME</h2><p>最近大脑有点空白，还有最近都在玩路由器，NND感觉我快荒废了！</p>
+
+          
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/25/Tomato-adm/" itemprop="url">
                   Tomato-ShadowSocks(armv7+mipsel)部署(ADM/adbyby)广告过滤
                 </a>
@@ -730,125 +853,6 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/02/04/Scratch/" itemprop="url">
-                  Scratch
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-04T01:16:27+08:00" content="2016-02-04">
-              2016-02-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/杂碎/" itemprop="url" rel="index">
-                    <span itemprop="name">杂碎</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/02/04/Scratch/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/04/Scratch/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/02/04/Scratch/" class="leancloud_visitors" data-flag-title="Scratch">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B.jpg" alt=""><br>过去的已成回忆！过去的就让他过去吧！由于之前的文章写的太杂乱，重新写吧！</p>
-
-          
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -895,7 +899,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -903,7 +907,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -912,7 +916,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
           
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>

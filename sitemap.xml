@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</loc>
+    <lastmod>2016-04-09T09:50:38.386Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.router008.com/2016/04/05/python/</loc>
     <lastmod>2016-04-09T08:56:58.485Z</lastmod>
   </url>
@@ -14,11 +19,6 @@
   <url>
     <loc>http://www.router008.com/2016/02/03/Tomato-ShadowSocks/</loc>
     <lastmod>2016-04-09T08:51:45.663Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</loc>
-    <lastmod>2016-03-18T14:29:06.919Z</lastmod>
   </url>
   
   <url>

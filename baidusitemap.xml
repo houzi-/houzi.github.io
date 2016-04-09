@@ -3,8 +3,30 @@
 
     
   <url>
+    <loc>http://www.router008.com/2016/03/25/Tomato-adm/</loc>
+    <lastmod>2016-04-09T09:54:13.438Z</lastmod>
+    <data>
+        <display>
+        <title>Tomato-ShadowSocks(armv7+mipsel)部署(ADM/adbyby)广告过滤</title>
+        <pubTime>2016-03-25T08:56:53.000Z</pubTime>
+        
+        <tag>Tomato </tag>
+         
+        <tag>路由器 </tag>
+         
+         
+           
+             
+              <breadCrumb title="Tomato" url="http://www.router008.com/categories/Tomato/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</loc>
-    <lastmod>2016-04-09T09:50:38.386Z</lastmod>
+    <lastmod>2016-04-09T09:53:40.620Z</lastmod>
     <data>
         <display>
         <title>Tomato-shadowsocks Scripting Guide</title>
@@ -40,28 +62,6 @@
            
              
               <breadCrumb title="Python" url="http://www.router008.com/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.router008.com/2016/03/25/Tomato-adm/</loc>
-    <lastmod>2016-04-09T08:52:22.740Z</lastmod>
-    <data>
-        <display>
-        <title>Tomato-ShadowSocks(armv7+mipsel)部署(ADM/adbyby)广告过滤</title>
-        <pubTime>2016-03-25T08:56:53.000Z</pubTime>
-        
-        <tag>Tomato </tag>
-         
-        <tag>路由器 </tag>
-         
-         
-           
-             
-              <breadCrumb title="Tomato" url="http://www.router008.com/categories/Tomato/"/>
           
         </display>
     </data>

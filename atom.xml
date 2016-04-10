@@ -81,7 +81,7 @@
     <link href="http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/"/>
     <id>http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</id>
     <published>2016-02-14T00:45:46.000Z</published>
-    <updated>2016-04-09T09:53:40.620Z</updated>
+    <updated>2016-04-10T05:34:53.187Z</updated>
     <content type="html"><![CDATA[<h2 id="u90E8_u7F72_u6559_u7A0B"><a href="#u90E8_u7F72_u6559_u7A0B" class="headerlink" title="部署教程"></a>部署教程</h2><blockquote>
 <p><a href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/" title="Tomato-ShadowSocks(armv7+mipsel)">http://www.router008.com/2016/02/03/Tomato-ShadowSocks/</a></p>
 </blockquote>
@@ -103,7 +103,8 @@
 <h3 id="temp_u548Ctemp_s_u53C2_u6570_28_u5C0F_u7C73_u8DEF_u7531_u5668_u591C_u95F4_u98CE_u6247_u81EA_u52A8_u9759_u97F3_29"><a href="#temp_u548Ctemp_s_u53C2_u6570_28_u5C0F_u7C73_u8DEF_u7531_u5668_u591C_u95F4_u98CE_u6247_u81EA_u52A8_u9759_u97F3_29" class="headerlink" title="temp和temp_s参数(小米路由器夜间风扇自动静音)"></a>temp和temp_s参数(小米路由器夜间风扇自动静音)</h3><p>enter <code>shadowsocks remp/temp_s</code></p>
 <p>第一次配置脚本的时候直接在脚本开头启动该功能<br><code>xiaomi_fan=1</code></p>
 <h2 id="u811A_u672C_u66F4_u65B0"><a href="#u811A_u672C_u66F4_u65B0" class="headerlink" title="脚本更新"></a>脚本更新</h2><p><code>update_rebuild</code>参数主要用来更新脚本和重新安装脚本</p>
-<h3 id="u66F4_u65B0_u811A_u672C_u90E8_u5206"><a href="#u66F4_u65B0_u811A_u672C_u90E8_u5206" class="headerlink" title="更新脚本部分"></a>更新脚本部分</h3><p><strong>注意！其他方案一次类推！</strong><br>enter <code>shadowsocks update_rebuild</code> 它会提示你是否<code>update script</code>还是<code>rebuild script</code>,我们这里是要更新脚本所以选择<code>y</code>,然后会再次提示‘one?’(one指的是用chnroutes方案的,则反之！)这里我们以<strong>chnroutes</strong>来操作，最后提示是否<code>ss-redir</code>，选择<code>y</code>=&gt;整个升级就完成了！</p>
+<h3 id="u66F4_u65B0_u811A_u672C_u90E8_u5206"><a href="#u66F4_u65B0_u811A_u672C_u90E8_u5206" class="headerlink" title="更新脚本部分"></a>更新脚本部分</h3><p><font color="red">note:</font>(&gt;5.0 version)</p>
+<p><strong>注意！其他方案一次类推！</strong><br>enter <code>shadowsocks update_rebuild</code> 它会提示你是否<code>update script</code>还是<code>rebuild script</code>,我们这里是要更新脚本所以选择<code>y</code>,然后会再次提示‘one?’(one指的是用chnroutes方案的,则反之！)这里我们以<strong>chnroutes</strong>来操作，最后提示是否<code>ss-redir</code>，选择<code>y</code>=&gt;整个升级就完成了！</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="u90E8_u7F72_u6559_u7A0B"><a href="#u90E8_u7F72_u6559_u7A0B" class="headerlink" title="部署教程"></a>部署教程</h2><blockquote>

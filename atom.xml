@@ -81,11 +81,12 @@
     <link href="http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/"/>
     <id>http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</id>
     <published>2016-02-14T00:45:46.000Z</published>
-    <updated>2016-04-10T05:34:53.187Z</updated>
-    <content type="html"><![CDATA[<h2 id="u90E8_u7F72_u6559_u7A0B"><a href="#u90E8_u7F72_u6559_u7A0B" class="headerlink" title="部署教程"></a>部署教程</h2><blockquote>
+    <updated>2016-04-10T05:42:29.594Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/wiki.gif" alt=""></p>
+<a id="more"></a>
+<h2 id="u90E8_u7F72_u6559_u7A0B"><a href="#u90E8_u7F72_u6559_u7A0B" class="headerlink" title="部署教程"></a>部署教程</h2><blockquote>
 <p><a href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/" title="Tomato-ShadowSocks(armv7+mipsel)">http://www.router008.com/2016/02/03/Tomato-ShadowSocks/</a></p>
 </blockquote>
-<a id="more"></a>
 <h2 id="u811A_u672C_u53C2_u6570_u4ECB_u7ECD"><a href="#u811A_u672C_u53C2_u6570_u4ECB_u7ECD" class="headerlink" title="脚本参数介绍"></a>脚本参数介绍</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line">set_up)</span><br><span class="line">    ShadowSocks自动安装部署</span><br><span class="line">    关联`run` `ipset` `rules`</span><br><span class="line"></span><br><span class="line">run)</span><br><span class="line">    关联`set_up`起到安装部署过程中启动程序和更新IP列表的作用也可以独立运行，例如跟着路由器一起开机启动</span><br><span class="line">    关联`update_chnroutes` `update_gfwlist` `flush` `rules`</span><br><span class="line"></span><br><span class="line">ipset)</span><br><span class="line">    加载使用IPSET所需要的模块</span><br><span class="line">    也可以独立运行，例如跟着路由器一起开机启动</span><br><span class="line"></span><br><span class="line">rules)</span><br><span class="line">    加载各个方案所需要的iptables rules</span><br><span class="line">    也可以独立运行，例如跟着路由器一起开机启动</span><br><span class="line"></span><br><span class="line">global)</span><br><span class="line">    开启和关闭[2][3][4]方案的全局代理模式</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行</span><br><span class="line"></span><br><span class="line">flush)</span><br><span class="line">    清空防iptanles之前加载的rules，恢复iptables默认</span><br><span class="line">    可以独立运行</span><br><span class="line"></span><br><span class="line">update)</span><br><span class="line">    [2][3][4]方案更新中国IP列表、Host、Routing</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行	</span><br><span class="line"></span><br><span class="line">update_gfwlist)</span><br><span class="line">    [1]方案更新GFWLIST</span><br><span class="line">    可以独立运行	</span><br><span class="line"></span><br><span class="line">check)</span><br><span class="line">    守护各个方案的进程</span><br><span class="line">    可以独立运行	</span><br><span class="line">	</span><br><span class="line">check_rules)</span><br><span class="line">    守护iptables rules</span><br><span class="line">    关联`flush`</span><br><span class="line">    可以独立运行		</span><br><span class="line"></span><br><span class="line">ss_switch)</span><br><span class="line">    shadowsocks账号切换</span><br><span class="line">    多种模式账号切换:</span><br><span class="line">    [修改json文件] 主要用于各个不同[密码][加密方式][端口]</span><br><span class="line">    [修改IP] 主要用于相同[密码][加密方式][端口]</span><br><span class="line">    关联`run`</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">mult_switch)</span><br><span class="line">    `ss_switch`的强化版本</span><br><span class="line">    带有6个shadowsocks账号的储存和写入功能</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行	 </span><br><span class="line">	</span><br><span class="line">lan_ignore)</span><br><span class="line">    [2][3][4]方案的本地局域网设备使用代理控制</span><br><span class="line">    多种写入IP方式:</span><br><span class="line">    [连接路由器的全部IP]</span><br><span class="line">    [自定义手动输入]</span><br><span class="line">    多种控制模式:</span><br><span class="line">    [仅允许列表内]</span><br><span class="line">    [除了列表内]</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">off_on)</span><br><span class="line">    关闭和开启代理</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">update_rebuild)</span><br><span class="line">    更新脚本和重新设置脚本</span><br><span class="line">    多种模式:</span><br><span class="line">    [仅更新脚本] 主要用于脚本小幅度更新,如果脚本有大幅度功能的变化,此模式并不适用</span><br><span class="line">    [重新设置脚本] 主要用于脚本大幅度更新和小幅度更新</span><br><span class="line">    关联`flush` `rules`</span><br><span class="line">    可以独立运行</span><br><span class="line">     	 </span><br><span class="line">*mail)</span><br><span class="line">    邮件提醒</span><br><span class="line">    可以独立运行</span><br><span class="line"></span><br><span class="line">*temp) */XIAOMI R1D/*</span><br><span class="line">    风扇控制</span><br><span class="line">    可以独立运行</span><br><span class="line">	</span><br><span class="line">*temp_s) */XIAOMI R1D/*</span><br><span class="line">    风扇开启夜间静音模式</span><br><span class="line">    可以独立运行</span><br></pre></td></tr></table></figure>
 <h2 id="u90E8_u5206_u53C2_u6570_u4F7F_u7528"><a href="#u90E8_u5206_u53C2_u6570_u4F7F_u7528" class="headerlink" title="部分参数使用"></a>部分参数使用</h2><h3 id="global_u53C2_u6570_uFF08_u5168_u5C40_u6A21_u5F0F_u5207_u6362_uFF09"><a href="#global_u53C2_u6570_uFF08_u5168_u5C40_u6A21_u5F0F_u5207_u6362_uFF09" class="headerlink" title="global参数（全局模式切换）"></a>global参数（全局模式切换）</h3><p>enter <code>shadowsocks rules</code></p>
 <p><strong>注意!</strong><br>第一次启动是全局模式，第二次再次启动时关闭全局模式</p>
@@ -107,9 +108,7 @@
 <p><strong>注意！其他方案一次类推！</strong><br>enter <code>shadowsocks update_rebuild</code> 它会提示你是否<code>update script</code>还是<code>rebuild script</code>,我们这里是要更新脚本所以选择<code>y</code>,然后会再次提示‘one?’(one指的是用chnroutes方案的,则反之！)这里我们以<strong>chnroutes</strong>来操作，最后提示是否<code>ss-redir</code>，选择<code>y</code>=&gt;整个升级就完成了！</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="u90E8_u7F72_u6559_u7A0B"><a href="#u90E8_u7F72_u6559_u7A0B" class="headerlink" title="部署教程"></a>部署教程</h2><blockquote>
-<p><a href="http://www.router008.com/2016/02/03/Tomato-ShadowSocks/" title="Tomato-ShadowSocks(armv7+mipsel)">http://www.router008.com/2016/02/03/Tomato-ShadowSocks/</a></p>
-</blockquote>]]>
+    <![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/wiki.gif" alt=""></p>]]>
     
     </summary>
     
@@ -126,8 +125,10 @@
     <link href="http://www.router008.com/2016/02/05/OpenWRT-Guide/"/>
     <id>http://www.router008.com/2016/02/05/OpenWRT-Guide/</id>
     <published>2016-02-05T13:20:36.000Z</published>
-    <updated>2016-02-14T00:52:02.195Z</updated>
-    <content type="html"><![CDATA[<h2 id="u914D_u7F6E_u7F16_u8BD1_u73AF_u5883"><a href="#u914D_u7F6E_u7F16_u8BD1_u73AF_u5883" class="headerlink" title="配置编译环境"></a>配置编译环境</h2><p>必须使用<strong>非root用户</strong>，ArchLinux需要创建新用户。</p>
+    <updated>2016-04-10T05:46:45.773Z</updated>
+    <content type="html"><![CDATA[<p><img src="https://openwrt.org/.styles/img/openwrt-logo.png" alt=""></p>
+<a id="more"></a>
+<h2 id="u914D_u7F6E_u7F16_u8BD1_u73AF_u5883"><a href="#u914D_u7F6E_u7F16_u8BD1_u73AF_u5883" class="headerlink" title="配置编译环境"></a>配置编译环境</h2><p>必须使用<strong>非root用户</strong>，ArchLinux需要创建新用户。</p>
 <h3 id="u5B89_u88C5_u4F9D_u8D56_u5305"><a href="#u5B89_u88C5_u4F9D_u8D56_u5305" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><pre><code>// Ubuntu 14.04 必选
 # apt-get install asciidoc bash bc binutils bzip2 fastjar flex git-core g++ build-essential util-linux gawk libgtk2.0-dev intltool jikespg zlib1g-dev genisoimage libncurses5-dev libssl-dev patch perl-modules python2.7-dev rsync ruby sdcc unzip wget gettext xsltproc libboost1.55-dev libboost1.55-tools-dev libxml-parser-perl libusb-dev bin86 bcc bzr ecj sharutils openjdk-7-jdk zip gcc-multilib quilt
 // Ubuntu 14.04 可选
@@ -141,8 +142,7 @@
 $ yaourt -S bcc jikes
 // ArchLinux 可选
 # pacman -S subversion
-</code></pre><a id="more"></a>
-<h3 id="u9996_u6B21_u914D_u7F6E_u9700_u8981_u68C0_u51FA_u6E90_u4EE3_u7801_uFF0C_u8FD9_u91CC_u7528subversion_u68C0_u51FA_u5F00_u53D1trunk_u5206_u652F"><a href="#u9996_u6B21_u914D_u7F6E_u9700_u8981_u68C0_u51FA_u6E90_u4EE3_u7801_uFF0C_u8FD9_u91CC_u7528subversion_u68C0_u51FA_u5F00_u53D1trunk_u5206_u652F" class="headerlink" title="首次配置需要检出源代码，这里用subversion检出开发trunk分支"></a>首次配置需要检出源代码，这里用subversion检出开发trunk分支</h3><pre><code>$ svn co svn://svn.openwrt.org/openwrt/trunk/
+</code></pre><h3 id="u9996_u6B21_u914D_u7F6E_u9700_u8981_u68C0_u51FA_u6E90_u4EE3_u7801_uFF0C_u8FD9_u91CC_u7528subversion_u68C0_u51FA_u5F00_u53D1trunk_u5206_u652F"><a href="#u9996_u6B21_u914D_u7F6E_u9700_u8981_u68C0_u51FA_u6E90_u4EE3_u7801_uFF0C_u8FD9_u91CC_u7528subversion_u68C0_u51FA_u5F00_u53D1trunk_u5206_u652F" class="headerlink" title="首次配置需要检出源代码，这里用subversion检出开发trunk分支"></a>首次配置需要检出源代码，这里用subversion检出开发trunk分支</h3><pre><code>$ svn co svn://svn.openwrt.org/openwrt/trunk/
 </code></pre><p>这时，就会出现名为<code>trunk</code>的文件夹，这就是将来我们的工作目录。<br>如果已经有了以前的版本库，需要按照下面的命令更新</p>
 <pre><code>// 必须进入工作目录才能更新
 $ cd trunk/
@@ -456,21 +456,7 @@ $ make menuconfig
 </blockquote>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="u914D_u7F6E_u7F16_u8BD1_u73AF_u5883"><a href="#u914D_u7F6E_u7F16_u8BD1_u73AF_u5883" class="headerlink" title="配置编译环境"></a>配置编译环境</h2><p>必须使用<strong>非root用户</strong>，ArchLinux需要创建新用户。</p>
-<h3 id="u5B89_u88C5_u4F9D_u8D56_u5305"><a href="#u5B89_u88C5_u4F9D_u8D56_u5305" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><pre><code>// Ubuntu 14.04 必选
-# apt-get install asciidoc bash bc binutils bzip2 fastjar flex git-core g++ build-essential util-linux gawk libgtk2.0-dev intltool jikespg zlib1g-dev genisoimage libncurses5-dev libssl-dev patch perl-modules python2.7-dev rsync ruby sdcc unzip wget gettext xsltproc libboost1.55-dev libboost1.55-tools-dev libxml-parser-perl libusb-dev bin86 bcc bzr ecj sharutils openjdk-7-jdk zip gcc-multilib quilt
-// Ubuntu 14.04 可选
-# apt-get install subversion mercurial cvs
-// ArchLinux 必选
-# pacman -S base-devel
-# pacman -S [--needed] asciidoc b43-fwcutter bash bc bin86 boost binutils bzip2 cdrkit fastjar flex gawk gettext git gtk2 intltool jdk7-openjdk libusb libxslt ncurses openssl patch perl python2 rsync ruby sdcc sharutils unzip util-linux wget zlib gcc make perl-extutils-makemaker findutils libstdc++5 lib32-libstdc++5
-// libstdc++  可能需要版本6,待测
-// 根据wiki，ArchLinux部分必选包在AUR里面
-// 从 2015-12-11 开始，bcc和jikes貌似从AUR里消失了，可能是 C++ ABI 更新的缘故，不安装这两个貌似也可以
-$ yaourt -S bcc jikes
-// ArchLinux 可选
-# pacman -S subversion
-</code></pre>]]>
+    <![CDATA[<p><img src="https://openwrt.org/.styles/img/openwrt-logo.png" alt=""></p>]]>
     
     </summary>
     

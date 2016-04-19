@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.router008.com/"/>
-  <updated>2016-04-10T08:52:02.572Z</updated>
+  <updated>2016-04-19T10:16:11.214Z</updated>
   <id>http://www.router008.com/</id>
   
   <author>
@@ -13,6 +13,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[DD-WRT-ShadowSocks(armv7)]]></title>
+    <link href="http://www.router008.com/2016/04/19/DD-WRT-ShadowSocks/"/>
+    <id>http://www.router008.com/2016/04/19/DD-WRT-ShadowSocks/</id>
+    <published>2016-04-19T09:39:29.000Z</published>
+    <updated>2016-04-19T10:16:11.214Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>
+<a id="more"></a>
+<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>armv7</center></td></tr><tr><td>System</td><td><center>DD-WRT v24-sp2 (03/07/15) kongac</center></td></tr><tr><td>Support</td><td><center>all</center></td></tr><tr><td>Depend</td><td><center>entware_arm-install_arm.sh</center></td></tr></table>
+
+<h2 id="Statement"><a href="#Statement" class="headerlink" title="Statement"></a>Statement</h2><p>Currently this project is to test stage, not so fast deployment publish tutorials and automated deployment scripts , if there are willing to test students can contact me!</p>
+<h2 id="Run_the_show"><a href="#Run_the_show" class="headerlink" title="Run the show"></a>Run the show</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/DD-WRT.PNG" alt=""></p>
+<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/DD-WRT2.PNG" alt=""></p>
+<h2 id="In_development"><a href="#In_development" class="headerlink" title="In development"></a>In development</h2><p>……</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="DD-WRT" scheme="http://www.router008.com/tags/DD-WRT/"/>
+    
+      <category term="路由器" scheme="http://www.router008.com/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    
+      <category term="DD-WRT" scheme="http://www.router008.com/categories/DD-WRT/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[不服就来跑个分]]></title>

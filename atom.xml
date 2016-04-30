@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.router008.com/"/>
-  <updated>2016-04-29T14:03:28.820Z</updated>
+  <updated>2016-04-30T09:09:52.898Z</updated>
   <id>http://www.router008.com/</id>
   
   <author>
@@ -15,14 +15,14 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[DD-WRT-ShadowSocks(armv7)]]></title>
-    <link href="http://www.router008.com/2016/04/19/DD-WRT-ShadowSocks/"/>
-    <id>http://www.router008.com/2016/04/19/DD-WRT-ShadowSocks/</id>
-    <published>2016-04-19T09:39:29.000Z</published>
-    <updated>2016-04-29T14:03:28.820Z</updated>
+    <title><![CDATA[DD-WRT-ShadowSocks]]></title>
+    <link href="http://www.router008.com/2016/04/30/DD-WRT-ShadowSocks/"/>
+    <id>http://www.router008.com/2016/04/30/DD-WRT-ShadowSocks/</id>
+    <published>2016-04-30T09:08:47.000Z</published>
+    <updated>2016-04-30T09:09:52.898Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>
 <a id="more"></a>
-<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>armv7</center></td></tr><tr><td>System</td><td><center>DD-WRT v24-sp2 <29440m>(04/19/16) kongac</29440m></center></td></tr><tr><td>Support</td><td><center>all</center></td></tr><tr><td>Depend</td><td><center>entware_arm-install_arm.sh</center></td></tr></table>
+<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>armv7</center></td></tr><tr><td>System</td><td><center>DD-WRT v24-sp2 <29440m>(04/19/16) kongac</29440m></center></td></tr><tr><td>Support</td><td><center>all</center></td></tr><tr><td>Depend</td><td><center>entware_arm-install_arm.sh</center></td></tr><tr><td>Kernel</td><td><center>3.10.x</center></td></tr></table>
 
 <h2 id="Open_JFFS_or_mount_U_disk"><a href="#Open_JFFS_or_mount_U_disk" class="headerlink" title="Open JFFS or mount U disk"></a>Open JFFS or mount U disk</h2><p><code>JFFS</code></p>
 <p><strong>Administration &gt;&gt; JFFS &gt;&gt; (Internal Flash Storage)Enable/(Clean Internal Flash Storage)Enable &gt;&gt; save &gt;&gt; Apply Settings</strong></p>

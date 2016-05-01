@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.router008.com/"/>
-  <updated>2016-04-30T09:14:36.029Z</updated>
+  <updated>2016-05-01T08:55:51.139Z</updated>
   <id>http://www.router008.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.router008.com/2016/04/30/DD-WRT-ShadowSocks/"/>
     <id>http://www.router008.com/2016/04/30/DD-WRT-ShadowSocks/</id>
     <published>2016-04-30T09:08:47.000Z</published>
-    <updated>2016-04-30T09:14:36.029Z</updated>
+    <updated>2016-05-01T08:55:51.139Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>
 <a id="more"></a>
 <h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>armv7</center></td></tr><tr><td>System</td><td><center>DD-WRT v24-sp2 <29440m>(04/19/16) kongac</29440m></center></td></tr><tr><td>Support</td><td><center>all</center></td></tr><tr><td>Depend</td><td><center>entware_arm-install_arm.sh</center></td></tr><tr><td>Kernel</td><td><center>3.10.x</center></td></tr></table>
@@ -83,6 +83,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
 <h2 id="Issues"><a href="#Issues" class="headerlink" title="Issues"></a>Issues</h2><blockquote>
 <p>Found a Bug? Plea se report at <a href="https://github.com/houzi-/dd-wrt-shadowsocks/issues" target="_blank" rel="external">https://github.com/houzi-/dd-wrt-shadowsocks/issues</a>.</p>
 </blockquote>
+<h2 id="Show"><a href="#Show" class="headerlink" title="Show"></a>Show</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/ipset.PNG" alt=""></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>]]>

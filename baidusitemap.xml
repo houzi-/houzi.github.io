@@ -3,6 +3,28 @@
 
     
   <url>
+    <loc>http://www.router008.com/2016/04/30/DD-WRT-ShadowSocks/</loc>
+    <lastmod>2016-05-09T07:39:57.838Z</lastmod>
+    <data>
+        <display>
+        <title>DD-WRT-ShadowSocks</title>
+        <pubTime>2016-04-30T09:08:47.000Z</pubTime>
+        
+        <tag>DD-WRT </tag>
+         
+        <tag>路由器 </tag>
+         
+         
+           
+             
+              <breadCrumb title="DD-WRT" url="http://www.router008.com/categories/DD-WRT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.router008.com/2016/02/03/Tomato-ShadowSocks/</loc>
     <lastmod>2016-05-02T08:07:09.091Z</lastmod>
     <data>
@@ -18,28 +40,6 @@
            
              
               <breadCrumb title="Tomato" url="http://www.router008.com/categories/Tomato/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.router008.com/2016/04/30/DD-WRT-ShadowSocks/</loc>
-    <lastmod>2016-05-01T08:59:29.811Z</lastmod>
-    <data>
-        <display>
-        <title>DD-WRT-ShadowSocks</title>
-        <pubTime>2016-04-30T09:08:47.000Z</pubTime>
-        
-        <tag>DD-WRT </tag>
-         
-        <tag>路由器 </tag>
-         
-         
-           
-             
-              <breadCrumb title="DD-WRT" url="http://www.router008.com/categories/DD-WRT/"/>
           
         </display>
     </data>

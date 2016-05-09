@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.router008.com/"/>
-  <updated>2016-05-09T13:28:52.400Z</updated>
+  <updated>2016-05-09T13:36:07.118Z</updated>
   <id>http://www.router008.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.router008.com/2016/05/09/Tomato-ShadowSocks/"/>
     <id>http://www.router008.com/2016/05/09/Tomato-ShadowSocks/</id>
     <published>2016-05-09T10:51:00.000Z</published>
-    <updated>2016-05-09T13:28:52.400Z</updated>
+    <updated>2016-05-09T13:36:07.118Z</updated>
     <content type="html"><![CDATA[<h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>
 <table><tr><td>Platform</td><td><center>mipsel</center></td><td><center>armv7</center></td></tr><tr><td>System</td><td>Tomato shibby v1.28.0000 MIPSR2-135</td><td>Tomato shibby v1.28.0000 K26ARM-136</td></tr><tr><td>Support</td><td><center>all</center></td><td><center>all</center></td></tr><tr><td>Depend</td><td>entware_mipsel-install_arm.sh</td><td>entware_arm-install_arm.sh</td></tr></table>
 
@@ -191,7 +191,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     <link href="http://www.router008.com/2016/04/10/cpubench/"/>
     <id>http://www.router008.com/2016/04/10/cpubench/</id>
     <published>2016-04-10T06:47:05.000Z</published>
-    <updated>2016-04-10T08:52:02.572Z</updated>
+    <updated>2016-05-09T13:37:22.812Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/cpubench.jpg" alt=""></p>
 <a id="more"></a>
 <h2 id="u626F_u6DE1"><a href="#u626F_u6DE1" class="headerlink" title="扯淡"></a>扯淡</h2><p>天气变热了，内心也变得躁动，总是坐不住(つ``ˉ³ˉ)つ总想干一些很特别的事情来降降火！天气热最好不要看太多的书，最近看太多的太多的专业书导致大脑有点呆滞！得搞个好玩的东西来让自己放松和吓吓火</p>
@@ -231,7 +231,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     <link href="http://www.router008.com/2016/04/05/python/"/>
     <id>http://www.router008.com/2016/04/05/python/</id>
     <published>2016-04-05T02:46:16.000Z</published>
-    <updated>2016-04-09T08:56:58.485Z</updated>
+    <updated>2016-05-09T13:36:48.053Z</updated>
     <content type="html"><![CDATA[<h2 id="u6838_u5FC3_u4EE3_u7801_u5757"><a href="#u6838_u5FC3_u4EE3_u7801_u5757" class="headerlink" title="核心代码块"></a>核心代码块</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/python.png" alt=""></p>
 <a id="more"></a>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">GetCatPath</span><span class="params">(self)</span>:</span> <span class="comment">#主函数</span></span><br><span class="line">data = copy.deepcopy(self.map)</span><br><span class="line"><span class="comment">#data = self.map</span></span><br><span class="line">self.result=<span class="string">''</span> <span class="comment">#结果存放处</span></span><br><span class="line"><span class="comment">#方向定义</span></span><br><span class="line"><span class="comment">#dirs = [[-1,0,'L'],[0,-1,'U'],[1,0,'R'],[0,1,'D']]</span></span><br><span class="line"><span class="comment">#dirs2 = [[-1,0,'L'],[0,-1,'U'],[1,-1,'E'],[1,0,'R'],[1,1,'V'],[0,1,'D']]#%2=0</span></span><br><span class="line"><span class="comment">#dirs1 = [[-1,0,'L'],[-1,-1,'Q'],[0,-1,'U'],[1,0,'R'],[0,1,'D'],[-1,1,'Z']]</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">move</span><span class="params">(path,x,y,field)</span>:</span> <span class="comment">#移动函数</span></span><br><span class="line">truepathlen = len(path)</span><br><span class="line">trueresultlen = len(self.result)</span><br><span class="line">true<span class="keyword">if</span> pathlen &gt;= resultlen <span class="keyword">and</span> resultlen != <span class="number">0</span>:<span class="comment">#这个条件很重要，当此时查找的路线已经比之前的长时就没必要查找了</span></span><br><span class="line">truetrue<span class="keyword">return</span></span><br><span class="line">truefield[y][x] = pathlen + <span class="number">1</span> <span class="comment">#把自己变成1, 防止无限递归</span></span><br><span class="line">true<span class="keyword">if</span> x <span class="keyword">in</span> [<span class="number">0</span>, <span class="number">8</span>] <span class="keyword">or</span> y <span class="keyword">in</span> [<span class="number">0</span>, <span class="number">8</span>]: <span class="comment">#如果到终点了</span></span><br><span class="line">truetrue<span class="keyword">if</span> resultlen &gt; pathlen <span class="keyword">or</span> resultlen == <span class="number">0</span>:</span><br><span class="line">truetruetrueself.result = path<span class="comment">#将路径放入结果</span></span><br><span class="line">truetruetrue<span class="keyword">return</span></span><br><span class="line">truedirs = self.dirs1</span><br><span class="line">true<span class="keyword">if</span> y <span class="keyword">in</span> self.quickmodlist:<span class="comment">#发现比取模快上那么点</span></span><br><span class="line">truetruedirs = self.dirs2</span><br><span class="line">true<span class="keyword">for</span> d <span class="keyword">in</span> dirs: <span class="comment">#检查六个方向</span></span><br><span class="line">truetrue<span class="keyword">if</span> y+d[<span class="number">1</span>] <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">9</span>) <span class="keyword">and</span> x+d[<span class="number">0</span>] <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">9</span>):</span><br><span class="line">truetruetrue<span class="keyword">if</span> field[y+d[<span class="number">1</span>]][x+d[<span class="number">0</span>]] &gt; pathlen+<span class="number">1</span> <span class="keyword">or</span> field[y+d[<span class="number">1</span>]][x+d[<span class="number">0</span>]] == <span class="number">0</span>: <span class="comment">#如果某个方向为0</span></span><br><span class="line">truetruetruetruemove(path+d[<span class="number">2</span>],x+d[<span class="number">0</span>],y+d[<span class="number">1</span>],field) <span class="comment">#递归</span></span><br><span class="line">move(<span class="string">''</span>,self.catpos[<span class="number">0</span>],self.catpos[<span class="number">1</span>],data) <span class="comment">#调用移动函数, 此时路径为空</span></span><br><span class="line">self.waysmap = data</span><br><span class="line"><span class="comment">#self.PrintMap()</span></span><br><span class="line"><span class="comment">#print ''</span></span><br><span class="line"><span class="comment">#self.PrintWaysMap()</span></span><br><span class="line"><span class="keyword">return</span> self.result</span><br></pre></td></tr></table></figure>
@@ -258,7 +258,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     <link href="http://www.router008.com/2016/03/25/Tomato-adm/"/>
     <id>http://www.router008.com/2016/03/25/Tomato-adm/</id>
     <published>2016-03-25T08:56:53.000Z</published>
-    <updated>2016-04-09T09:54:13.438Z</updated>
+    <updated>2016-05-09T13:36:39.535Z</updated>
     <content type="html"><![CDATA[<h2 id="u90E8_u7F72_u539F_u56E0"><a href="#u90E8_u7F72_u539F_u56E0" class="headerlink" title="部署原因"></a>部署原因</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/adm.jpg" alt=""></p>
 <p>有同学会问我，为什么你突发奇想来弄广告过滤，呵呵！我真的不好意思说出口了(T＿T)! 最近我在看《太阳的什么鬼后裔》,每次看一集就来个一分多钟的广告，真的是受不了！有人直接说直接在浏览器或者电脑上安装得了，有必要弄得这么麻烦吗？Oh,shit! My world you do not know! 作为一名准程序员和GEEK必须得装一下逼ψ(｀∇´)ψ,不扯B了…..</p>
 <a id="more"></a>
@@ -293,7 +293,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     <link href="http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/"/>
     <id>http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</id>
     <published>2016-02-14T00:45:46.000Z</published>
-    <updated>2016-04-16T06:06:24.554Z</updated>
+    <updated>2016-05-09T13:36:18.887Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/wiki.gif" alt=""></p>
 <a id="more"></a>
 <h2 id="u90E8_u7F72_u6559_u7A0B"><a href="#u90E8_u7F72_u6559_u7A0B" class="headerlink" title="部署教程"></a>部署教程</h2><blockquote>
@@ -341,7 +341,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     <link href="http://www.router008.com/2016/02/05/OpenWRT-Guide/"/>
     <id>http://www.router008.com/2016/02/05/OpenWRT-Guide/</id>
     <published>2016-02-05T13:20:36.000Z</published>
-    <updated>2016-04-10T05:46:45.773Z</updated>
+    <updated>2016-05-09T13:37:04.496Z</updated>
     <content type="html"><![CDATA[<p><img src="https://openwrt.org/.styles/img/openwrt-logo.png" alt=""></p>
 <a id="more"></a>
 <h2 id="u914D_u7F6E_u7F16_u8BD1_u73AF_u5883"><a href="#u914D_u7F6E_u7F16_u8BD1_u73AF_u5883" class="headerlink" title="配置编译环境"></a>配置编译环境</h2><p>必须使用<strong>非root用户</strong>，ArchLinux需要创建新用户。</p>
@@ -689,7 +689,7 @@ $ make menuconfig
     <link href="http://www.router008.com/2016/02/05/ubuntu-development-environment/"/>
     <id>http://www.router008.com/2016/02/05/ubuntu-development-environment/</id>
     <published>2016-02-05T08:55:24.000Z</published>
-    <updated>2016-02-05T09:05:24.730Z</updated>
+    <updated>2016-05-09T13:36:30.974Z</updated>
     <content type="html"><![CDATA[<h2 id="u4E00-__u5B89_u88C5C_uFF0FC_uFF0B_uFF0B_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883"><a href="#u4E00-__u5B89_u88C5C_uFF0FC_uFF0B_uFF0B_u7A0B_u5E8F_u7684_u5F00_u53D1_u73AF_u5883" class="headerlink" title="一. 安装C／C＋＋程序的开发环境"></a>一. 安装C／C＋＋程序的开发环境</h2><pre><code>sudo apt-get install build-essential //安装主要编译工具 包括gcc, g++, make 
 sudo apt-get install autoconf automake //安装时apt-get 推荐用 automake 代替 automake1.9
 sudo apt-get install flex bison //flex 经常和自由软件 Bison 语法分析器生成器一起使用
@@ -732,7 +732,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
     <link href="http://www.router008.com/2016/02/04/Scratch/"/>
     <id>http://www.router008.com/2016/02/04/Scratch/</id>
     <published>2016-02-03T17:16:27.000Z</published>
-    <updated>2016-02-05T05:20:44.754Z</updated>
+    <updated>2016-05-09T13:36:56.536Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B.jpg" alt=""><br>过去的已成回忆！过去的就让他过去吧！由于之前的文章写的太杂乱，重新写吧！</p>
 ]]></content>
     <summary type="html">
@@ -750,7 +750,7 @@ sudo apt-get install binutils-doc cpp-doc gcc-doc glibc-doc stl-manual //安装�
     <link href="http://www.router008.com/2016/02/02/hello-world/"/>
     <id>http://www.router008.com/2016/02/02/hello-world/</id>
     <published>2016-02-02T15:14:12.000Z</published>
-    <updated>2016-02-05T05:32:09.724Z</updated>
+    <updated>2016-05-09T13:37:12.343Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <a id="more"></a>
 <h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>

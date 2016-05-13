@@ -3,12 +3,12 @@
 
     
   <url>
-    <loc>http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</loc>
-    <lastmod>2016-05-11T08:21:57.916Z</lastmod>
+    <loc>http://www.router008.com/2016/05/09/Tomato-ShadowSocks/</loc>
+    <lastmod>2016-05-13T07:00:33.792Z</lastmod>
     <data>
         <display>
-        <title>Tomato-shadowsocks Scripting Guide</title>
-        <pubTime>2016-02-14T00:45:46.000Z</pubTime>
+        <title>Tomato-shibby shadowsocks(mipsel+arm)</title>
+        <pubTime>2016-05-09T10:51:00.000Z</pubTime>
         
         <tag>Tomato </tag>
          
@@ -25,12 +25,12 @@
 
     
   <url>
-    <loc>http://www.router008.com/2016/05/09/Tomato-ShadowSocks/</loc>
-    <lastmod>2016-05-10T12:34:41.195Z</lastmod>
+    <loc>http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</loc>
+    <lastmod>2016-05-13T06:08:07.602Z</lastmod>
     <data>
         <display>
-        <title>Tomato-shibby shadowsocks(mipsel+arm)</title>
-        <pubTime>2016-05-09T10:51:00.000Z</pubTime>
+        <title>Tomato-shadowsocks Scripting Guide</title>
+        <pubTime>2016-02-14T00:45:46.000Z</pubTime>
         
         <tag>Tomato </tag>
          

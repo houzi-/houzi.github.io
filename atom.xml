@@ -101,7 +101,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     <link href="http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/"/>
     <id>http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/</id>
     <published>2016-05-09T10:51:00.000Z</published>
-    <updated>2016-05-14T13:29:52.102Z</updated>
+    <updated>2016-05-16T14:44:34.531Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>
 <a id="more"></a>
 <h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><table><tr><td>Platform</td><td><center>armv7</center></td></tr><tr><td>System</td><td><center>DD-WRT v24-sp2 <29620m>(04/19/16) kongac</29620m></center></td></tr><tr><td>Support</td><td><center>all</center></td></tr><tr><td>Depend</td><td><center>entware_arm-install_arm.sh</center></td></tr><tr><td>Kernel</td><td><center>3.10.x</center></td></tr></table>
@@ -165,7 +165,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
 <h2 id="Issues"><a href="#Issues" class="headerlink" title="Issues"></a>Issues</h2><blockquote>
 <p>Found a Bug? Plea se report at <a href="https://github.com/houzi-/dd-wrt-shadowsocks/issues" target="_blank" rel="external">https://github.com/houzi-/dd-wrt-shadowsocks/issues</a>.</p>
 </blockquote>
-<h2 id="Firmware__28_built_xt_set-ko_module__29"><a href="#Firmware__28_built_xt_set-ko_module__29" class="headerlink" title="Firmware ( built xt_set.ko module )"></a>Firmware ( built xt_set.ko module )</h2><p><del><a href="http://pan.baidu.com/s/1qYekA6o" target="_blank" rel="external">DD-WRT-ARMV7 firmware</a> <strong>password:<code>lijo</code></strong></del></p>
+<h2 id="Firmware__28_built_xt_set-ko_module__29"><a href="#Firmware__28_built_xt_set-ko_module__29" class="headerlink" title="Firmware ( built xt_set.ko module )"></a>Firmware ( built xt_set.ko module )</h2><p><a href="http://pan.baidu.com/s/1qYekA6o" target="_blank" rel="external">DD-WRT-ARMV7 firmware</a> <strong>password:<code>lijo</code></strong></p>
 <h2 id="Show"><a href="#Show" class="headerlink" title="Show"></a>Show</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/ipset.PNG" alt=""></p>
 ]]></content>
     <summary type="html">

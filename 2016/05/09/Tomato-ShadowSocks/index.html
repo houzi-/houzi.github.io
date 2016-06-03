@@ -59,19 +59,19 @@
 
 
 
-<meta name="description" content="Configuration Overview">
+<meta name="description" content="准备">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tomato-shibby shadowsocks(mipsel+arm)">
 <meta property="og:url" content="http://www.router008.com/2016/05/09/Tomato-ShadowSocks/index.html">
 <meta property="og:site_name" content="HOUZI的博客">
-<meta property="og:description" content="Configuration Overview">
+<meta property="og:description" content="准备">
 <meta property="og:image" content="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png">
 <meta property="og:image" content="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss1.PNG">
 <meta property="og:image" content="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_2.PNG">
-<meta property="og:updated_time" content="2016-05-28T07:14:48.987Z">
+<meta property="og:updated_time" content="2016-06-03T14:02:42.905Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tomato-shibby shadowsocks(mipsel+arm)">
-<meta name="twitter:description" content="Configuration Overview">
+<meta name="twitter:description" content="准备">
 
 
 
@@ -293,41 +293,40 @@
       
 
       
-        <h2 id="Configuration_Overview"><a href="#Configuration_Overview" class="headerlink" title="Configuration Overview"></a>Configuration Overview</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>
+        <h2 id="u51C6_u5907"><a href="#u51C6_u5907" class="headerlink" title="准备"></a>准备</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>
 <a id="more"></a>
 <table><tr><td>Platform</td><td><center>mipsel</center></td><td><center>armv7</center></td></tr><tr><td>System</td><td>Tomato shibby v1.28.0000 MIPSR2-135</td><td>Tomato shibby v1.28.0000 K26ARM-136</td></tr><tr><td>Support</td><td><center>all</center></td><td><center>all</center></td></tr><tr><td>Depend</td><td>entware_mipsel-install_arm.sh</td><td>entware_arm-install_arm.sh</td></tr></table>
 
-<h2 id="Open_JFFS_or_mount_U_disk"><a href="#Open_JFFS_or_mount_U_disk" class="headerlink" title="Open JFFS or mount U disk"></a>Open JFFS or mount U disk</h2><p><code>JFFS</code></p>
+<h2 id="u6302_u8F7DJFFS_u5206_u533A_u6216USB_u5206_u533A"><a href="#u6302_u8F7DJFFS_u5206_u533A_u6216USB_u5206_u533A" class="headerlink" title="挂载JFFS分区或USB分区"></a>挂载JFFS分区或USB分区</h2><p><code>挂载JFFS分区</code></p>
 <p><strong>Administration &gt;&gt; JFFS &gt;&gt; Format/Erase &gt;&gt; save</strong></p>
-<p><code>U disk</code><br><strong><font color="red">note:</font>If you do not support JFFS you can choose to mount U disk installed</strong></p>
-<p><strong>Enter <code>fdisk -l /dev/sda</code> to see U disk drive which mounts:</strong></p>
-<p>root@unknown:/#<br>Disk /dev/sda: 15.9 GB, 15931539456 bytes<br>255 heads, 63 sectors/track, 1936 cylinders<br>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
+<p><code>挂载USB_disk分区</code></p>
+<p><strong><font color="red">note:</font>如果你的固件并不支持jffs分区，可以选择挂载USB_DISK的方式(If you have enough space jffs)</strong></p>
+<p><strong>输入 <code>fdisk -l /dev/sda</code> 查看分区表信息</strong></p>
+<p>Disk /dev/sda: 15.9 GB, 15931539456 bytes<br>255 heads, 63 sectors/track, 1936 cylinders<br>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
 <p>Device Boot      Start         End      Blocks  Id System<br><code>/dev/sda1</code>               1        1937    15558112+  c Win95 FAT32 (LBA)</p>
-<p><strong>I tagged by the above information indicates that the U disk drive is mounted <code>/dev/sda1</code></strong></p>
-<p><strong>Enter <code>umount -l /dev/sda1</code> unloading U disk mounted partition , so you can easily format</strong></p>
-<p><strong>Enter <code>mkfs.ext3 /dev/sda1</code> to format the partition as ext3/4 file system format</strong></p>
-<h2 id="Modify_shadowsocks_script_installation_path"><a href="#Modify_shadowsocks_script_installation_path" class="headerlink" title="Modify shadowsocks script installation path"></a>Modify shadowsocks script installation path</h2><p><strong><font color="red">note:</font> After downloading unzip into shadowsocks.tar.gz router /tmp directory</strong></p>
-<p><strong>Looking script this command:<code>PREFIX=/jffs</code></strong></p>
+<p><strong>我们从以上的信息中可以看出你的分区表信息 <code>/dev/sda1</code></strong><br><strong>输入 <code>umount -l /dev/sda1</code> 强制卸载正在挂载的分区</strong><br><strong>输入 <code>mkfs.ext3 /dev/sda1</code> 把当前分区的文件系统格式化为ext3/4</strong></p>
+<h2 id="u4FEE_u6539_u811A_u672C_u5B89_u88C5_u8DEF_u5F84"><a href="#u4FEE_u6539_u811A_u672C_u5B89_u88C5_u8DEF_u5F84" class="headerlink" title="修改脚本安装路径"></a>修改脚本安装路径</h2><p><strong><font color="red">note:</font>去文章最后提供的安装脚本下载地址，下载安装脚本上传到路由器的<code>/tmp</code>目录</strong></p>
+<p><strong>查找脚本中这一行命令:<code>PREFIX=/jffs</code></strong></p>
 <ol>
-<li><strong>If it is mounted JFFS, you should keep the default</strong></li>
-<li><strong>If it is mounted U disk, You should change the <code>PREFIX=/mnt/sda1</code></strong></li>
+<li><strong>如果你的挂载分区是<code>/jffs</code>你可以保持默认</strong></li>
+<li><strong>如果你的挂载分区是USB_DISK,你需要改变一下！比如:<code>PREFIX=/mnt/sda1</code></strong></li>
 </ol>
-<h2 id="Installation_script_shadowsocks"><a href="#Installation_script_shadowsocks" class="headerlink" title="Installation script shadowsocks"></a>Installation script shadowsocks</h2><p><strong>Download:<code>shadowsocks-libev_2.4.6-RE、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.5.3-1、resolvip_0.1(not necessary)、diffutils3.3-3 dnscrypt-proxy_1.6.1-1 curl_7.47.2-DEV(mipsel) dnsmasq-2.75 cron_4.1-2 zoneinfo-asia_2016b-1</code>upload to the router /tmp directory</strong></p>
-<p><strong>Enter <code>chmod +x /tmp/shadowsocks</code> given execute permissions</strong><br><strong>Installation <code>/tmp/shadowsocks -su</code></strong></p>
+<h2 id="u5B89_u88C5_u811A_u672C"><a href="#u5B89_u88C5_u811A_u672C" class="headerlink" title="安装脚本"></a>安装脚本</h2><p><strong>下载这些插件<code>shadowsocks-libev_2.4.6-RE、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.5.3-1、resolvip_0.1(not necessary)、diffutils3.3-3 dnscrypt-proxy_1.6.1-1 curl_7.47.2-DEV(mipsel) dnsmasq-2.75 cron_4.1-2 zoneinfo-asia_2016b-1</code>上传到路由器的<code>/tmp</code>目录</strong></p>
+<p><strong><font color="red">note:</font>如果使用本博客中提供的固件，不用下载<code>kmod-xt-set_3.10_armv7soft</code>该模块</strong><br><strong>输入<code>chmod +x /tmp/shadowsocks</code>给予脚本可执行权限</strong><br><strong>脚本安装命令<code>/tmp/shadowsocks -su</code></strong></p>
 <p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss1.PNG" alt=""></p>
-<h2 id="Configuration_shadowsocks_Account"><a href="#Configuration_shadowsocks_Account" class="headerlink" title="Configuration shadowsocks Account"></a>Configuration shadowsocks Account</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_2.PNG" alt=""></p>
+<h2 id="u914D_u7F6E_u8D26_u53F7_u4FE1_u606F"><a href="#u914D_u7F6E_u8D26_u53F7_u4FE1_u606F" class="headerlink" title="配置账号信息"></a>配置账号信息</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_2.PNG" alt=""></p>
 <p><strong><font color="red">note:</font>Local Server Port and Sever Port Do not backwards</strong></p>
-<h2 id="Select_agent_program"><a href="#Select_agent_program" class="headerlink" title="Select agent program"></a>Select agent program</h2><table><tr><td>Option</td><td><center>mipsel+armv7</center></td></tr><tr><td><center>1</center></td><td>ss-redir+gfwlist+pdnsd</td></tr><tr><td><center>2</center></td><td>ss-redir+chnroutes+chinadns+pdnsd</td></tr><tr><td><center>3</center></td><td>ss-redir+chnroutes+chinadns+dnscrypt-proxy</td></tr><tr><td><center>4</center></td><td>ss-redir+chnroutes+pcap_dnsproxy</td></tr><tr><td><center>5</center></td><td>ss-tunnel+chnroutes+chinadns</td></tr></table>
+<h2 id="u9009_u62E9_u65B9_u6848"><a href="#u9009_u62E9_u65B9_u6848" class="headerlink" title="选择方案"></a>选择方案</h2><table><tr><td>Option</td><td><center>mipsel+armv7</center></td></tr><tr><td><center>1</center></td><td>ss-redir+gfwlist+pdnsd</td></tr><tr><td><center>2</center></td><td>ss-redir+chnroutes+chinadns+pdnsd</td></tr><tr><td><center>3</center></td><td>ss-redir+chnroutes+chinadns+dnscrypt-proxy</td></tr><tr><td><center>4</center></td><td>ss-redir+chnroutes+pcap_dnsproxy</td></tr><tr><td><center>5</center></td><td>ss-tunnel+chnroutes+chinadns</td></tr></table>
 
 <p><strong><font color="red">note:</font></strong></p>
 <ol>
-<li><strong>If the configuration is successful you can use directly shadowsocks Agent</strong></li>
-<li><strong>If you use Option <code>4</code> appears unable to use shadowsocks agents may be Pcap_DNSProxy process dies , so you should enter <code>/opt/etc/init.d/S27pcap_dnsproxy start</code>(Recommend)</strong></li>
-<li><strong>If you use Option <code>3</code> appears unable to use shadowsocks agents may be dnscrypt-proxy suspended animation, so should enter <code>/opt/etc/init.d/S29dnscrypt-proxy restart</code>(Unstable)</strong></li>
+<li><strong>以上方案的选择根据自己的使用习惯选择！</strong></li>
+<li><strong>如果你使用方案4，你需要密切注意Pcap_DNSProxy这个进程是否正常启动，如果不正常直接输入<code>/opt/etc/init.d/S27pcap_dnsproxy start</code>(不建议使用，太耗费资源！)</strong></li>
+<li><strong>我现在使用的就是方案3，稳定性不错推荐使用！(推荐使用，很轻量！)</strong></li>
 </ol>
-<h2 id="Reboot_Router"><a href="#Reboot_Router" class="headerlink" title="Reboot Router"></a>Reboot Router</h2><h2 id="FQ"><a href="#FQ" class="headerlink" title="FQ"></a>FQ</h2><p><strong>Configuration Pcap_DNSProxyDNS resolve</strong></p>
+<h2 id="u91CD_u542F_u8DEF_u7531_u5668"><a href="#u91CD_u542F_u8DEF_u7531_u5668" class="headerlink" title="重启路由器"></a>重启路由器</h2><h2 id="FQ"><a href="#FQ" class="headerlink" title="FQ"></a>FQ</h2><p><strong>Pcap_DNSProxy配置文件</strong></p>
 <p><font color="red">note:</font>Edit Pcap_DNSProxy of <code>Config.conf</code> file ( The file path : /opt/etc/pcap_dnsproxy)</p>
-<p><font color="red">note:</font>If the <code>MIPS</code> architecture router does not recommend the following configuration , it is recommended to keep the default configuration and use with dnsmasq</p>
+<p><font color="red">note:</font>如果是<code>mipsel</code>平台的不建议使用方案4</p>
 <pre><code>[Local DNS]
 Local Protocol = IPv4 + UDP
 Local Hosts = 0
@@ -344,16 +343,16 @@ IPv4 DNS Address = 202.12.27.33:53 #Foreign DNS, I am here to fill local VPS &ap
 IPv4 Alternate DNS Address = 8.8.4.4:53|208.67.220.220:443|208.67.222.222:5353 #Alternate DNS, keep the default
 IPv4 Local DNS Address = 114.114.114.114:53 #Domestic DNS. Try to fill your own ISP&apos;s DNS
 IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
-</code></pre><h2 id="Usage_wiki"><a href="#Usage_wiki" class="headerlink" title="Usage wiki"></a>Usage wiki</h2><blockquote>
+</code></pre><h2 id="u4F7F_u7528_u6307_u5357"><a href="#u4F7F_u7528_u6307_u5357" class="headerlink" title="使用指南"></a>使用指南</h2><blockquote>
 <p><a href="http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/">http://www.router008.com/2016/02/14/Tomato-shadowsocks-Scripting-Guide/</a></p>
 </blockquote>
-<h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><p><font color="red">note:</font> VER:6.0 <strong>(You need to re- deployment script)</strong></p>
+<h2 id="u4E0B_u8F7D"><a href="#u4E0B_u8F7D" class="headerlink" title="下载"></a>下载</h2><p><font color="red">note:</font> VER:6.0 <strong>(You need to re- deployment script)</strong></p>
 <p><a href="https://github.com/houzi-/tomato-shadowsocks/releases" target="_blank" rel="external">shadowsocks script</a><br><a href="http://pan.baidu.com/s/1mgYlk28" target="_blank" rel="external">mipsel packages</a> <strong>password:<code>i3q0</code></strong><br><a href="http://pan.baidu.com/s/1dDNAdXn" target="_blank" rel="external">armv7 packages</a> <strong>password:<code>pldi</code></strong></p>
-<h2 id="Firmware__28_enable_TPROXY_support__29"><a href="#Firmware__28_enable_TPROXY_support__29" class="headerlink" title="Firmware ( enable TPROXY support )"></a>Firmware ( enable TPROXY support )</h2><p><a href="http://pan.baidu.com/s/1cibzum" target="_blank" rel="external">Tomato-shibby-ARMV7 firmware</a> <strong>password:<code>vibr</code></strong></p>
-<h2 id="Information_Reference"><a href="#Information_Reference" class="headerlink" title="Information Reference"></a>Information Reference</h2><blockquote>
+<h2 id="u56FA_u4EF6_u4E0B_u8F7D_28_u5185_u6838_u5F00_u542FTPROXY_29"><a href="#u56FA_u4EF6_u4E0B_u8F7D_28_u5185_u6838_u5F00_u542FTPROXY_29" class="headerlink" title="固件下载(内核开启TPROXY)"></a>固件下载(内核开启TPROXY)</h2><p><a href="http://pan.baidu.com/s/1cibzum" target="_blank" rel="external">Tomato-shibby-ARMV7 firmware</a> <strong>password:<code>vibr</code></strong></p>
+<h2 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h2><blockquote>
 <p><a href="https://github.com/shadowsocks/shadowsocks-libev#usage" title="https://github.com/shadowsocks/shadowsocks-libev#usage" target="_blank" rel="external">https://github.com/shadowsocks/shadowsocks-libev#usage</a><br><a href="https://github.com/shadowsocks/openwrt-shadowsocks/blob/master/files/shadowsocks.rule" title="https://github.com/shadowsocks/openwrt-shadowsocks/blob/master/files/shadowsocks.rule" target="_blank" rel="external">https://github.com/shadowsocks/openwrt-shadowsocks/blob/master/files/shadowsocks.rule</a><br><a href="https://github.com/chengr28/Pcap_DNSProxy" title="https://github.com/chengr28/Pcap_DNSProxy" target="_blank" rel="external">https://github.com/chengr28/Pcap_DNSProxy</a></p>
 </blockquote>
-<h2 id="Issues"><a href="#Issues" class="headerlink" title="Issues"></a>Issues</h2><blockquote>
+<h2 id="u95EE_u9898_u53CD_u9988"><a href="#u95EE_u9898_u53CD_u9988" class="headerlink" title="问题反馈"></a>问题反馈</h2><blockquote>
 <p>Found a Bug? Plea se report at <a href="https://github.com/houzi-/tomato-shadowsocks/issues" target="_blank" rel="external">https://github.com/houzi-/tomato-shadowsocks/issues</a></p>
 </blockquote>
 
@@ -545,7 +544,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Configuration_Overview"><span class="nav-number">1.</span> <span class="nav-text">Configuration Overview</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Open_JFFS_or_mount_U_disk"><span class="nav-number">2.</span> <span class="nav-text">Open JFFS or mount U disk</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Modify_shadowsocks_script_installation_path"><span class="nav-number">3.</span> <span class="nav-text">Modify shadowsocks script installation path</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Installation_script_shadowsocks"><span class="nav-number">4.</span> <span class="nav-text">Installation script shadowsocks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Configuration_shadowsocks_Account"><span class="nav-number">5.</span> <span class="nav-text">Configuration shadowsocks Account</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Select_agent_program"><span class="nav-number">6.</span> <span class="nav-text">Select agent program</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reboot_Router"><span class="nav-number">7.</span> <span class="nav-text">Reboot Router</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FQ"><span class="nav-number">8.</span> <span class="nav-text">FQ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Usage_wiki"><span class="nav-number">9.</span> <span class="nav-text">Usage wiki</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Download"><span class="nav-number">10.</span> <span class="nav-text">Download</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Firmware__28_enable_TPROXY_support__29"><span class="nav-number">11.</span> <span class="nav-text">Firmware ( enable TPROXY support )</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Information_Reference"><span class="nav-number">12.</span> <span class="nav-text">Information Reference</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Issues"><span class="nav-number">13.</span> <span class="nav-text">Issues</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u51C6_u5907"><span class="nav-number">1.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6302_u8F7DJFFS_u5206_u533A_u6216USB_u5206_u533A"><span class="nav-number">2.</span> <span class="nav-text">挂载JFFS分区或USB分区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4FEE_u6539_u811A_u672C_u5B89_u88C5_u8DEF_u5F84"><span class="nav-number">3.</span> <span class="nav-text">修改脚本安装路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5_u811A_u672C"><span class="nav-number">4.</span> <span class="nav-text">安装脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u914D_u7F6E_u8D26_u53F7_u4FE1_u606F"><span class="nav-number">5.</span> <span class="nav-text">配置账号信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u9009_u62E9_u65B9_u6848"><span class="nav-number">6.</span> <span class="nav-text">选择方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u91CD_u542F_u8DEF_u7531_u5668"><span class="nav-number">7.</span> <span class="nav-text">重启路由器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FQ"><span class="nav-number">8.</span> <span class="nav-text">FQ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4F7F_u7528_u6307_u5357"><span class="nav-number">9.</span> <span class="nav-text">使用指南</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4E0B_u8F7D"><span class="nav-number">10.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u56FA_u4EF6_u4E0B_u8F7D_28_u5185_u6838_u5F00_u542FTPROXY_29"><span class="nav-number">11.</span> <span class="nav-text">固件下载(内核开启TPROXY)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u53C2_u8003"><span class="nav-number">12.</span> <span class="nav-text">参考</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u95EE_u9898_u53CD_u9988"><span class="nav-number">13.</span> <span class="nav-text">问题反馈</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

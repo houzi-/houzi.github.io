@@ -69,7 +69,7 @@
 <meta property="og:image" content="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss1.PNG">
 <meta property="og:image" content="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_2.PNG">
 <meta property="og:image" content="http://7xpjbv.com1.z0.glb.clouddn.com/ipset.PNG">
-<meta property="og:updated_time" content="2016-06-19T10:12:21.642Z">
+<meta property="og:updated_time" content="2016-06-19T10:14:04.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DD-WRT-ShadowSocks(arm+?)">
 <meta name="twitter:description">
@@ -315,8 +315,8 @@
 <p>Disk /dev/sda: 7742 MB, 7742685184 bytes<br>84 heads, 38 sectors/track, 4737 cylinders<br>Units = cylinders of 3192 * 512 = 1634304 bytes</p>
 <p>   Device Boot      Start         End      Blocks  Id System<br><code>/dev/sda1               1        4738     7561197   b Win95 FAT32</code></p>
 <p><strong>我们从以上的信息中可以看出你的分区表信息 <code>/dev/sda1</code></strong><br><strong>输入 <code>umount -l /dev/sda1</code> 强制卸载正在挂载的分区</strong></p>
-<p><font color="red">注意:</font><br>使用<code>lsmod | grep ext</code>这个命令查看一下ext3模块是否正确挂载，如果没有挂载请输入以下命令(<strong>如果没有挂载这些模块将无法格式化为ext3文件系统</strong>):<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">modprobe ext2</span><br><span class="line">modprobe ext3</span><br><span class="line">modprobe ext4</span><br></pre></td></tr></table></figure></p>
-<p><strong>再输入 <code>mkfs.ext3 /dev/sda1</code> 把当前分区的文件系统格式化为ext3/4<u>(此过程可能有些久)</u></strong><br><strong>重启路由器一下,然后继续以下教程</strong></p>
+<font color="red"><strong>注意:</strong></font><br>使用<code>lsmod | grep ext</code>这个命令查看一下ext3模块是否正确挂载，如果没有挂载请输入以下命令(<strong>如果没有挂载这些模块将无法格式化为ext3文件系统</strong>):<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">modprobe ext2</span><br><span class="line">modprobe ext3</span><br><span class="line">modprobe ext4</span><br></pre></td></tr></table></figure><br><br><strong>再输入 <code>mkfs.ext3 /dev/sda1</code> 把当前分区的文件系统格式化为ext3/4<u>(此过程可能有些久)</u></strong><br><font color="red"><strong>重启路由器一下,然后继续以下教程</strong></font>
+
 <h2 id="u4FEE_u6539_u811A_u672C_u5B89_u88C5_u8DEF_u5F84"><a href="#u4FEE_u6539_u811A_u672C_u5B89_u88C5_u8DEF_u5F84" class="headerlink" title="修改脚本安装路径"></a>修改脚本安装路径</h2><p><strong><font color="red">note:</font>去文章最后提供的安装脚本下载地址，下载安装脚本上传到路由器的<code>/tmp</code>目录</strong></p>
 <p><strong>查找脚本中这一行命令:<code>PREFIX=/jffs</code></strong></p>
 <ol>

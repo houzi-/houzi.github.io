@@ -101,7 +101,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     <link href="http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/"/>
     <id>http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/</id>
     <published>2016-05-09T10:51:00.000Z</published>
-    <updated>2016-06-18T10:08:13.608Z</updated>
+    <updated>2016-06-19T10:07:12.394Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>
 <a id="more"></a>
 <h2 id="u51C6_u5907"><a href="#u51C6_u5907" class="headerlink" title="准备"></a>准备</h2><table><tr><td>Platform</td><td><center>armv7</center></td></tr><tr><td>System</td><td><center>DD-WRT</center></td></tr><tr><td>Support</td><td><center>all</center></td></tr><tr><td>Depend</td><td><center>entware_arm-install_arm.sh</center></td></tr><tr><td>Kernel</td><td><center>3.10.x</center></td></tr></table>
@@ -113,7 +113,10 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
 <p><strong>输入 <code>fdisk -l /dev/sda</code> 查看分区表信息</strong></p>
 <p>Disk /dev/sda: 7742 MB, 7742685184 bytes<br>84 heads, 38 sectors/track, 4737 cylinders<br>Units = cylinders of 3192 * 512 = 1634304 bytes</p>
 <p>   Device Boot      Start         End      Blocks  Id System<br><code>/dev/sda1               1        4738     7561197   b Win95 FAT32</code></p>
-<p><strong>我们从以上的信息中可以看出你的分区表信息 <code>/dev/sda1</code></strong><br><strong>输入 <code>umount -l /dev/sda1</code> 强制卸载正在挂载的分区</strong><br><strong>输入 <code>mkfs.ext3 /dev/sda1</code> 把当前分区的文件系统格式化为ext3/4</strong></p>
+<p><strong>我们从以上的信息中可以看出你的分区表信息 <code>/dev/sda1</code></strong><br><strong>输入 <code>umount -l /dev/sda1</code> 强制卸载正在挂载的分区</strong></p>
+<p><font color="red">注意:</font><br>使用<code>lsmod | grep ext</code>这个命令查看一下ext3模块是否正确挂载，如果没有挂载请输入以下命令:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">modprobe ext2</span><br><span class="line">modprobe ext3</span><br><span class="line">modprobe ext4</span><br></pre></td></tr></table></figure>
+<p><strong>输入 <code>mkfs.ext3 /dev/sda1</code> 把当前分区的文件系统格式化为ext3/4</strong></p>
 <h2 id="u4FEE_u6539_u811A_u672C_u5B89_u88C5_u8DEF_u5F84"><a href="#u4FEE_u6539_u811A_u672C_u5B89_u88C5_u8DEF_u5F84" class="headerlink" title="修改脚本安装路径"></a>修改脚本安装路径</h2><p><strong><font color="red">note:</font>去文章最后提供的安装脚本下载地址，下载安装脚本上传到路由器的<code>/tmp</code>目录</strong></p>
 <p><strong>查找脚本中这一行命令:<code>PREFIX=/jffs</code></strong></p>
 <ol>

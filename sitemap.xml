@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/</loc>
+    <lastmod>2016-06-19T10:07:12.394Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.router008.com/2016/02/14/ShadowSocks-Scripting-Guide/</loc>
     <lastmod>2016-06-18T10:13:27.917Z</lastmod>
   </url>
@@ -9,11 +14,6 @@
   <url>
     <loc>http://www.router008.com/2016/05/09/Tomato-ShadowSocks/</loc>
     <lastmod>2016-06-18T10:09:05.548Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/</loc>
-    <lastmod>2016-06-18T10:08:13.608Z</lastmod>
   </url>
   
   <url>

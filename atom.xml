@@ -101,14 +101,14 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     <link href="http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/"/>
     <id>http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/</id>
     <published>2016-05-09T10:51:00.000Z</published>
-    <updated>2016-06-19T10:14:04.964Z</updated>
+    <updated>2016-06-19T15:56:52.931Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>
 <a id="more"></a>
 <h2 id="u51C6_u5907"><a href="#u51C6_u5907" class="headerlink" title="准备"></a>准备</h2><table><tr><td>Platform</td><td><center>armv7</center></td></tr><tr><td>System</td><td><center>DD-WRT</center></td></tr><tr><td>Support</td><td><center>all</center></td></tr><tr><td>Depend</td><td><center>entware_arm-install_arm.sh</center></td></tr><tr><td>Kernel</td><td><center>3.10.x</center></td></tr></table>
 
 <h2 id="u6302_u8F7DJFFS_u5206_u533A_u6216USB_u5206_u533A"><a href="#u6302_u8F7DJFFS_u5206_u533A_u6216USB_u5206_u533A" class="headerlink" title="挂载JFFS分区或USB分区"></a>挂载JFFS分区或USB分区</h2><p><code>挂载JFFS分区</code></p>
 <p><strong>Administration &gt;&gt; JFFS &gt;&gt; (Internal Flash Storage)Enable/(Clean Internal Flash Storage)Enable &gt;&gt; save &gt;&gt; Apply Settings</strong></p>
-<p><code>挂载USB_disk分区</code></p>
+<p><code>挂载USB_disk分区</code><font color="red"><strong>(如果选择安装在/jffs分区,以下这部分教程可以忽略)</strong></font></p>
 <p><strong><font color="red">note:</font>如果你的固件并不支持jffs分区，可以选择挂载USB_DISK的方式(If you have enough space jffs)</strong></p>
 <p><strong>输入 <code>fdisk -l /dev/sda</code> 查看分区表信息</strong></p>
 <p>Disk /dev/sda: 7742 MB, 7742685184 bytes<br>84 heads, 38 sectors/track, 4737 cylinders<br>Units = cylinders of 3192 * 512 = 1634304 bytes</p>

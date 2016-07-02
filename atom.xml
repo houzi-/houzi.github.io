@@ -101,7 +101,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     <link href="http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/"/>
     <id>http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/</id>
     <published>2016-05-09T10:51:00.000Z</published>
-    <updated>2016-06-19T16:00:13.383Z</updated>
+    <updated>2016-07-02T07:47:44.968Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>
 <a id="more"></a>
 <h2 id="u51C6_u5907"><a href="#u51C6_u5907" class="headerlink" title="准备"></a>准备</h2><table><tr><td>Platform</td><td><center>armv7</center></td></tr><tr><td>System</td><td><center>DD-WRT</center></td></tr><tr><td>Support</td><td><center>all</center></td></tr><tr><td>Depend</td><td><center>entware_arm-install_arm.sh</center></td></tr><tr><td>Kernel</td><td><center>3.10.x</center></td></tr></table>
@@ -122,8 +122,8 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
 <li><strong>如果你的挂载分区是<code>/jffs</code>你可以保持默认</strong></li>
 <li><strong>如果你的挂载分区是USB_DISK,你需要改变一下！比如:<code>PREFIX=/mnt/sda1</code></strong></li>
 </ol>
-<h2 id="u5B89_u88C5_u811A_u672C"><a href="#u5B89_u88C5_u811A_u672C" class="headerlink" title="安装脚本"></a>安装脚本</h2><p><strong>下载这些插件<code>shadowsocks-libev_2.4.7-RE、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.6.0-1、resolvip_0.1、diffutils3.3-3、dnscrypt-proxy_1.6.1-1、dnsmasq-2.75、iptables_1.4.21-RE_armv7soft、kmod-xt-set_3.10_armv7soft、ipset_6.29-1_armv7soft、cron_4.1-2_armv7soft</code>上传到路由器的<code>/tmp</code>目录</strong></p>
-<p><strong><font color="red">note:</font>如果使用本博客中提供的固件，不用下载<code>kmod-xt-set_3.10_armv7soft</code>该模块</strong><br><strong>输入<code>chmod +x /tmp/shadowsocks</code>给予脚本可执行权限</strong><br><strong>脚本安装命令<code>/tmp/shadowsocks -su</code></strong></p>
+<h2 id="u5B89_u88C5_u811A_u672C"><a href="#u5B89_u88C5_u811A_u672C" class="headerlink" title="安装脚本"></a>安装脚本</h2><p><strong>下载这些插件<code>shadowsocks-libev_2.4.7-RE、chinadns_1.3.2、pdnsd_1.2.9a、pcap-dnsproxy0.4.6.0-1、diffutils3.3-3、dnscrypt-proxy_1.6.1-1、dnsmasq-2.76、iptables_1.4.21-RE_armv7soft、kmod-xt-set_3.10_armv7soft、ipset_6.29-1_armv7soft、cron_4.1-2_armv7soft</code>上传到路由器的<code>/tmp</code>目录</strong></p>
+<p><strong><font color="red">note:</font>如果使用本博客中提供的固件，不用下载<code>kmod-xt-set_3.10_armv7soft</code>该模块</strong><br><strong><font color="red">note:</font>只需要下载文章中提到的这些插件，不要把一些无关的插件也上传到路由器里</strong><br><strong>输入<code>chmod +x /tmp/shadowsocks</code>给予脚本可执行权限</strong><br><strong>脚本安装命令<code>/tmp/shadowsocks -su</code></strong></p>
 <p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss1.PNG" alt=""></p>
 <h2 id="u914D_u7F6E_u8D26_u53F7_u4FE1_u606F"><a href="#u914D_u7F6E_u8D26_u53F7_u4FE1_u606F" class="headerlink" title="配置账号信息"></a>配置账号信息</h2><p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/tomato_ss_2.PNG" alt=""></p>
 <p><strong><font color="red">note:</font>注意一下Local Port和Server Port的区别</strong></p>
@@ -153,8 +153,9 @@ IPv4 DNS Address = 202.12.27.33:53 #Foreign DNS, I am here to fill local VPS &ap
 IPv4 Alternate DNS Address = 8.8.4.4:53|208.67.220.220:443|208.67.222.222:5353 #Alternate DNS, keep the default
 IPv4 Local DNS Address = 114.114.114.114:53 #Domestic DNS. Try to fill your own ISP&apos;s DNS
 IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
-</code></pre><h2 id="u4F7F_u7528_u6307_u5357"><a href="#u4F7F_u7528_u6307_u5357" class="headerlink" title="使用指南"></a>使用指南</h2><blockquote>
-<p>······</p>
+</code></pre><h2 id="u4F7F_u7528_u6307_u5357"><a href="#u4F7F_u7528_u6307_u5357" class="headerlink" title="使用指南"></a>使用指南</h2><p><strong><font color="red">(使用指南里面有如何排除错误的教程)</font></strong></p>
+<blockquote>
+<p><a href="http://www.router008.com/2016/02/14/ShadowSocks-Scripting-Guide/">http://www.router008.com/2016/02/14/ShadowSocks-Scripting-Guide/</a></p>
 </blockquote>
 <h2 id="u4E0B_u8F7D"><a href="#u4E0B_u8F7D" class="headerlink" title="下载"></a>下载</h2><blockquote>
 <p><a href="http://pan.baidu.com/s/1gfxyXNl" target="_blank" rel="external">DD-WRT-ARMV7 packages</a> <strong>password:<code>xud9</code></strong><br><a href="https://github.com/houzi-/dd-wrt-shadowsocks/releases" target="_blank" rel="external">dd-wrt-shadowsocks script</a></p>
@@ -288,7 +289,7 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
     <link href="http://www.router008.com/2016/02/14/ShadowSocks-Scripting-Guide/"/>
     <id>http://www.router008.com/2016/02/14/ShadowSocks-Scripting-Guide/</id>
     <published>2016-02-14T00:45:46.000Z</published>
-    <updated>2016-06-18T10:13:27.917Z</updated>
+    <updated>2016-07-02T08:15:20.034Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/wiki.gif" alt=""></p>
 <a id="more"></a>
 <h2 id="u90E8_u7F72_u6559_u7A0B"><a href="#u90E8_u7F72_u6559_u7A0B" class="headerlink" title="部署教程"></a>部署教程</h2><blockquote>
@@ -322,15 +323,22 @@ IPv4 Local Alternate DNS Address = 114.114.115.115:53:53 #Alternate DNS
 <h2 id="u811A_u672C_u66F4_u65B0"><a href="#u811A_u672C_u66F4_u65B0" class="headerlink" title="脚本更新"></a>脚本更新</h2><p><u>6.0版本的脚本由于作了较大幅度的修改需要重新部署</u></p>
 <p><font color="red">note:</font>(&gt;5.0 version)</p>
 <p><strong>注意！这个功能必须使用绝对路径来运行</strong><br>enter <code>/mnt/sdax/shadowsocks/shadowsocks -us</code> 它会提示你是否<code>CHNROUTES</code>还是<code>GFWLIST</code>,我们这里是以<code>CHNROUTES</code><strong>(除了方案一外其他的方案都是<code>CHNROUTES</code>)</strong>所以选择<code>y</code>,然后会再次提示‘ss-redir?’<strong>(ss-redir是方案2.3.4)</strong>这里我们以<strong>ss-redir</strong>来操作，选择<code>y</code>=&gt;整个升级就完成了！</p>
-<h2 id="u7B80_u5355_u6545_u969C_u6392_u9664_u548C_u89E3_u51B3"><a href="#u7B80_u5355_u6545_u969C_u6392_u9664_u548C_u89E3_u51B3" class="headerlink" title="简单故障排除和解决"></a>简单故障排除和解决</h2><blockquote>
-<p>1.如果出现无法使用代理的情况</p>
+<h2 id="u7B80_u5355_u6545_u969C_u68C0_u67E5"><a href="#u7B80_u5355_u6545_u969C_u68C0_u67E5" class="headerlink" title="简单故障检查"></a>简单故障检查</h2><blockquote>
+<p>1.如果出现无法使用代理但国内网站访问正常的情况</p>
 </blockquote>
-<p>执行<code>shadowsocks -S &amp;&amp; shadowsocks -f &amp;&amp; shadowsocks -r</code></p>
+<p><strong>第一、</strong>你先要检查这些插件的进程是否正常(插件的进程取决于你选择的方案)<br>enter <code>ps</code></p>
+<p><strong>第二、</strong>查看IPSET是否正确加载这些IP段和ignore.list是否完整(<code>/opt/etc/ignore.list</code>)<br>enter <code>ipset -L</code></p>
+<p><strong>第三、</strong>查看iptables是否正确加载成功<br>enter <code>iptables -t nat -L</code></p>
+<p><strong>第四、</strong>使用nslookup命令来查看是否被污染了<br>enter <code>nslookup www.youtube.com</code></p>
+<p><strong>第五、</strong>账号是否正常</p>
 <blockquote>
-<p>2.以上方式无法解决的情况</p>
+<p>2.如果出现能使用代理但国内网站访问却走代理或者是全局的情况</p>
 </blockquote>
-<p>执行<code>reboot</code></p>
-<p>`````</p>
+<p>查看IPSET是否正确加载这些IP段和ignore.list是否完整(<code>/opt/etc/ignore.list</code>)<br>enter <code>ipset -L</code></p>
+<blockquote>
+<p>3.如果出现能使用代理但国内网站访问不了的情况<br>到你安装脚本的目录(<code>EP:/jffs/shadowsocks/dnsmasq.d/accelerated-domains.china.conf</code>)<br>查看这个文件是否存在，还有格式是否正确！<br>正确的格式显示如下：<br>server=/0-gold.net/{你本地的DNS地址}<br>如果本地的DNS地址这一栏没有是留空的，运行以下命令修复:<br>enter<code>shadowsocks -u</code>(这是选择除方案一的以外的方案执行)<br>enter<code>shadowsocks -ug</code>(方案一的方案执行)</p>
+</blockquote>
+<p><strong><font color="blue">如果遇上以上的的情况，如果可以自己解决的更好，不会的可以根据以上的方法排查然后发送有用的信息给我协助你们解决！</font></strong></p>
 <h2 id="u65E7_u7248_u672C_u7248_u672C_u6587_u6863_u4E0B_u8F7D_285-0_29"><a href="#u65E7_u7248_u672C_u7248_u672C_u6587_u6863_u4E0B_u8F7D_285-0_29" class="headerlink" title="旧版本版本文档下载(5.0)"></a>旧版本版本文档下载(5.0)</h2><blockquote>
 <p><a href="http://pan.baidu.com/s/1gfazpth" target="_blank" rel="external">Tomato-shadowsocks Scripting Guide</a> <strong>密码:<code>fznh</code></strong></p>
 </blockquote>

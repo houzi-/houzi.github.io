@@ -48,7 +48,7 @@
     <link href="http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/"/>
     <id>http://www.router008.com/2016/05/09/DD-WRT-ShadowSocks/</id>
     <published>2016-05-09T10:51:00.000Z</published>
-    <updated>2016-07-12T11:55:06.469Z</updated>
+    <updated>2016-08-02T15:50:37.045Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xpjbv.com1.z0.glb.clouddn.com/shadowsocks-logo.png" alt=""></p>
 <a id="more"></a>
 <h2 id="u51C6_u5907"><a href="#u51C6_u5907" class="headerlink" title="准备"></a>准备</h2><table><tr><td>Platform</td><td><center>armv7</center></td></tr><tr><td>System</td><td><center>DD-WRT</center></td></tr><tr><td>Support</td><td><center>all</center></td></tr><tr><td>Depend</td><td><center>entware_arm-install_arm.sh</center></td></tr><tr><td>Kernel</td><td><center>3.10.x</center></td></tr></table>
